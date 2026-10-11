@@ -1,0 +1,11 @@
+# Isolated third-party sources and downloads must never enter the product index.
+/.research-cache/
+/artifacts/oss-assessment/
+/artifacts/handoff/
+
+# Credentials and local environment files.
+.env
+.env.*
+!.env.example
+*.key
+*.pem
