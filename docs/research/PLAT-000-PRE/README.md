@@ -24,4 +24,4 @@
 | [运行记录](RUNTIME_CHECKS.md) / [机器证据索引](EVIDENCE_INDEX.json) | 真实命令、环境、结果/范围、复现脚本、永久源码链接 |
 | [执行报告](EXECUTION_REPORT.md) / [批准原文](EXECUTION_PROMPT.md) | 现场保留、Git/PR 交付、完成范围和未验证事项 |
 
-代码管理仓库：[ElioLin/lcp-platform](https://github.com/ElioLin/lcp-platform)。最终审查请求绑定实际 PR 的 Base/Head，放在 PR 正文、最终回复及忽略的 `artifacts/handoff/`；报告不自引用最终 Head。
+代码管理仓库：[ElioLin/lcp-platform](https://github.com/ElioLin/lcp-platform)，报告交付为 [草稿 PR #1](https://github.com/ElioLin/lcp-platform/pull/1)。最终审查请求绑定实际 PR 的 Base/Head，放在 PR 正文、最终回复及忽略的 `artifacts/handoff/`；报告不自引用最终 Head。

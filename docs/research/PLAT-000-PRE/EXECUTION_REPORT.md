@@ -33,7 +33,9 @@ Git/rg/curl/Node/npm/psql可见；PATH Java为1.8.0_381，不代表本机全部J
 
 仓库：**ElioLin/lcp-platform**；origin见上。main研究最小基线已推送，Base **231a012adcaeef2ffd4757d1aba0edce2b6e4f85**。研究分支 **research/plat-000-pre-oss-selection** 从该基线创建。Git使用本机原有identity，未改全局配置，未force push。
 
-本文件不会写自身最终Head；最终Head、PR URL、实际clean/ignored状态、提交/推送核验结果写入 **PR正文、最终回复、artifacts/handoff/PLAT-000-PRE-review-request.md**。PR编号将在创建后回填于此报告的交付记录段，不伪造预期URL。
+研究报告已提交并推送到用户指定仓库，创建了 **[草稿 PR #1](https://github.com/ElioLin/lcp-platform/pull/1)**，base为main，head为上述研究分支；没有合并。首份完整报告提交为 `e616b585491c6580b0f8e41f680c1ea0a8af893e`，本交付记录随后提交于同一PR。
+
+本文件不会写自身最终Head；最终Head、实际clean/ignored状态、提交/推送核验结果写入 **PR正文、最终回复、artifacts/handoff/PLAT-000-PRE-review-request.md**。审查必须固定这些交接材料给出的最终报告Head，不读取“最新分支”。
 
 只明确stage治理、原prompt/原样归档、docs报告/自写probe；不使用git add -A。candidate source、archive、npm/PGdata、巨大log、凭证及最终外置交接均被忽略，不进入Git索引。
 
