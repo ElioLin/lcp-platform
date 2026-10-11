@@ -1,0 +1,3398 @@
+{
+  "schema_version": 1,
+  "task": "PLAT-000-PRE",
+  "generated_at": "2026-10-11T16:47:05.166Z",
+  "access_timezone": "Asia/Shanghai",
+  "fact_types": [
+    "VERIFIED_FACT",
+    "DESIGN_DECISION",
+    "ASSUMPTION",
+    "UNVERIFIED"
+  ],
+  "report_base_sha": "231a012adcaeef2ffd4757d1aba0edce2b6e4f85",
+  "report_head_binding": "Final PR body and artifacts/handoff/PLAT-000-PRE-review-request.md; no self-referential SHA",
+  "search_scope": {
+    "platform_repositories": 12,
+    "candidate_families": 11,
+    "companion_repositories": 1,
+    "deep_candidates": [
+      "nocobase",
+      "frappe",
+      "objectstack"
+    ],
+    "runtime_candidates": [
+      "objectstack"
+    ],
+    "runtime_scenarios": 2
+  },
+  "candidates": [
+    {
+      "id": "steedos",
+      "repository": "steedos/steedos-platform",
+      "repository_url": "https://github.com/steedos/steedos-platform",
+      "owner": "steedos",
+      "owner_type": "Organization",
+      "category": "B",
+      "official_docs": "https://docs.steedos.com/",
+      "edition_boundary": "Steedos 2.x；3.0/ObjectStack 重写与商业 ObjectOS 分开",
+      "license_observation": "modified Apache-2.0 + additional conditions",
+      "accessed_at": "2026-10-11T15:27:39.207Z",
+      "access_timezone": "Asia/Shanghai",
+      "default_branch": "3.0",
+      "default_head_sha": "db942fdddbdb34644fb470f015bd0f351ec0ca92",
+      "reviewed_sha": "82aae0733f2d4873eec08bce85b655cc5d3e4666",
+      "reviewed_version": "v2.7.32",
+      "latest_confirmed_github_release": {
+        "tag": "v2.7.32",
+        "published_at": "2026-02-04T09:53:34Z",
+        "url": "https://github.com/steedos/steedos-platform/releases/tag/v2.7.32",
+        "sha": "82aae0733f2d4873eec08bce85b655cc5d3e4666"
+      },
+      "archived": false,
+      "pushed_at": "2026-10-10T09:59:52Z",
+      "release_listing_limit": 10,
+      "issues_sample": [
+        {
+          "number": 8353,
+          "title": "feat(i18n): add Korean (ko) translation for webapp accounts UI",
+          "url": "https://github.com/steedos/steedos-platform/pull/8353",
+          "closed_at": "2026-09-11T09:26:08Z",
+          "is_pr": true
+        },
+        {
+          "number": 8350,
+          "title": "feat(schemas): support auto_open_filter on listview and lookup field (#8349)",
+          "url": "https://github.com/steedos/steedos-platform/pull/8350",
+          "closed_at": "2026-05-28T03:12:07Z",
+          "is_pr": true
+        },
+        {
+          "number": 8348,
+          "title": "fix(objectql): 修复对象 afterInsert 创建 tabs 时 company_ids 为 undefined 的崩溃",
+          "url": "https://github.com/steedos/steedos-platform/pull/8348",
+          "closed_at": "2026-05-15T02:09:03Z",
+          "is_pr": true
+        }
+      ],
+      "public_security_advisories_sample": [],
+      "advisory_limit": 5,
+      "access_errors": []
+    },
+    {
+      "id": "objectstack",
+      "repository": "objectstack-ai/objectstack",
+      "repository_url": "https://github.com/objectstack-ai/objectstack",
+      "owner": "objectstack-ai",
+      "owner_type": "Organization",
+      "category": "B",
+      "official_docs": "https://objectstack.ai/docs",
+      "edition_boundary": "ObjectOS 为独立商业产品；本次只审查开源 framework",
+      "license_observation": "Apache-2.0",
+      "accessed_at": "2026-10-11T15:27:49.202Z",
+      "access_timezone": "Asia/Shanghai",
+      "default_branch": "main",
+      "default_head_sha": "55382dc02a2168585a024ba142b98d8bce9910e6",
+      "reviewed_sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "reviewed_version": "create-objectstack@17.7.0",
+      "latest_confirmed_github_release": {
+        "tag": "create-objectstack@17.7.0",
+        "published_at": "2026-10-06T12:23:13Z",
+        "url": "https://github.com/objectstack-ai/objectstack/releases/tag/create-objectstack%4017.7.0",
+        "sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556"
+      },
+      "archived": false,
+      "pushed_at": "2026-10-11T15:26:04Z",
+      "release_listing_limit": 10,
+      "issues_sample": [
+        {
+          "number": 22857,
+          "title": "fix(objectql,metadata-protocol,spec): a paged search reports the counted total",
+          "url": "https://github.com/objectstack-ai/objectstack/pull/22857",
+          "closed_at": "2026-10-11T15:24:10Z",
+          "is_pr": true
+        },
+        {
+          "number": 22854,
+          "title": "feat(plugin-security)!: a package's isDefault suggestion takes effect once a manage_metadata holder accepts it for the deployment (#15204 stage U2)",
+          "url": "https://github.com/objectstack-ai/objectstack/pull/22854",
+          "closed_at": "2026-10-11T15:18:57Z",
+          "is_pr": true
+        },
+        {
+          "number": 22852,
+          "title": "fix(spec): the bulk action param rejection text names the promoted field-backed route (#22780)",
+          "url": "https://github.com/objectstack-ai/objectstack/pull/22852",
+          "closed_at": "2026-10-11T15:08:09Z",
+          "is_pr": true
+        }
+      ],
+      "public_security_advisories_sample": [],
+      "advisory_limit": 5,
+      "access_errors": []
+    },
+    {
+      "id": "nocobase",
+      "repository": "nocobase/nocobase",
+      "repository_url": "https://github.com/nocobase/nocobase",
+      "owner": "nocobase",
+      "owner_type": "Organization",
+      "category": "B",
+      "official_docs": "https://docs.nocobase.com/",
+      "edition_boundary": "社区版；Professional+ 迁移与审批未获取",
+      "license_observation": "Apache text + NocoBase supplementary agreement; conflicting legacy headers",
+      "accessed_at": "2026-10-11T15:28:02.409Z",
+      "access_timezone": "Asia/Shanghai",
+      "default_branch": "main",
+      "default_head_sha": "b28af0bd153a052f95adde6ac3322080807d3316",
+      "reviewed_sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "reviewed_version": "v2.2.23",
+      "latest_confirmed_github_release": {
+        "tag": "v2.2.23",
+        "published_at": "2026-10-11T13:22:48Z",
+        "url": "https://github.com/nocobase/nocobase/releases/tag/v2.2.23",
+        "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4"
+      },
+      "archived": false,
+      "pushed_at": "2026-10-11T15:22:39Z",
+      "release_listing_limit": 10,
+      "issues_sample": [
+        {
+          "number": 10755,
+          "title": "chore: release 2026-10-11.1 [skip ci]",
+          "url": "https://github.com/nocobase/nocobase/pull/10755",
+          "closed_at": "2026-10-11T14:43:53Z",
+          "is_pr": true
+        },
+        {
+          "number": 10754,
+          "title": "docs: promote illustrated capabilities as the sole chapter",
+          "url": "https://github.com/nocobase/nocobase/pull/10754",
+          "closed_at": "2026-10-11T14:40:18Z",
+          "is_pr": true
+        },
+        {
+          "number": 10753,
+          "title": "test(agent-runner): raise the suite's test timeout for loaded release runners",
+          "url": "https://github.com/nocobase/nocobase/pull/10753",
+          "closed_at": "2026-10-11T14:17:29Z",
+          "is_pr": true
+        }
+      ],
+      "public_security_advisories_sample": [
+        {
+          "id": "GHSA-v8vm-cqh8-q87q",
+          "url": "https://github.com/nocobase/nocobase/security/advisories/GHSA-v8vm-cqh8-q87q",
+          "published_at": "2026-06-08T00:43:50Z",
+          "severity": "medium",
+          "summary": "Sensitive Data Exposure via SQL Blacklist Bypass",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "@nocobase/plugin-collection-sql"
+              },
+              "vulnerable_version_range": "<= 2.0.59",
+              "patched_versions": "",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-p853-83gj-wjj3",
+          "url": "https://github.com/nocobase/nocobase/security/advisories/GHSA-p853-83gj-wjj3",
+          "published_at": "2026-06-12T10:10:44Z",
+          "severity": "medium",
+          "summary": "NocoBase backup restore schema name allows command injection",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "@nocobase/plugin-backups"
+              },
+              "vulnerable_version_range": "2.0.57",
+              "patched_versions": "",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-ghvf-qf6h-g8x5",
+          "url": "https://github.com/nocobase/nocobase/security/advisories/GHSA-ghvf-qf6h-g8x5",
+          "published_at": "2026-06-15T12:50:24Z",
+          "severity": "high",
+          "summary": "Arbitrary File Write chained with Local file Inclusion leads to Remote code execution",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "nocobase",
+                "name": "nocobase"
+              },
+              "vulnerable_version_range": "tested v2.0.57",
+              "patched_versions": "2.1.5",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-p849-8hwh-84j9",
+          "url": "https://github.com/nocobase/nocobase/security/advisories/GHSA-p849-8hwh-84j9",
+          "published_at": "2026-06-11T09:42:05Z",
+          "severity": "critical",
+          "summary": "SQL injection in /api/myInAppChannels:list filter to PG-superuser RCE",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "@nocobase/plugin-notification-in-app-message"
+              },
+              "vulnerable_version_range": "<= 2.0.60",
+              "patched_versions": "",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-wrwh-c28m-9jjh",
+          "url": "https://github.com/nocobase/nocobase/security/advisories/GHSA-wrwh-c28m-9jjh",
+          "published_at": "2026-04-18T03:37:49Z",
+          "severity": "high",
+          "summary": "SQL Injection and Validation Bypass via `sqlCollection:update` Missing `checkSQL` Call",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "nocobase"
+              },
+              "vulnerable_version_range": "<=2.0.38",
+              "patched_versions": "2.0.39",
+              "vulnerable_functions": []
+            }
+          ]
+        }
+      ],
+      "advisory_limit": 5,
+      "access_errors": []
+    },
+    {
+      "id": "corteza",
+      "repository": "cortezaproject/corteza",
+      "repository_url": "https://github.com/cortezaproject/corteza",
+      "owner": "cortezaproject",
+      "owner_type": "Organization",
+      "category": "B",
+      "official_docs": "https://docs.cortezaproject.org/corteza-docs/2024.9/index.html",
+      "edition_boundary": "Corteza；商业支持不等于代码授权",
+      "license_observation": "Apache-2.0",
+      "accessed_at": "2026-10-11T15:28:16.008Z",
+      "access_timezone": "Asia/Shanghai",
+      "default_branch": "2024.9.x",
+      "default_head_sha": "3835dfc4ac8bd89381753f09042ad147a4502576",
+      "reviewed_sha": "3835dfc4ac8bd89381753f09042ad147a4502576",
+      "reviewed_version": "2024.9.10",
+      "latest_confirmed_github_release": {
+        "tag": "2024.9.10",
+        "published_at": "2026-08-27T14:41:31Z",
+        "url": "https://github.com/cortezaproject/corteza/releases/tag/2024.9.10",
+        "sha": "3835dfc4ac8bd89381753f09042ad147a4502576"
+      },
+      "archived": false,
+      "pushed_at": "2026-10-09T14:39:06Z",
+      "release_listing_limit": 10,
+      "issues_sample": [
+        {
+          "number": 2359,
+          "title": "User group parent can be set to its own descendant, creating a cycle in the org tree",
+          "url": "https://github.com/cortezaproject/corteza/issues/2359",
+          "closed_at": "2026-10-02T19:19:40Z",
+          "is_pr": false
+        },
+        {
+          "number": 2358,
+          "title": "Deleting a user group with members or child groups leaves it soft-deleted and breaks server startup",
+          "url": "https://github.com/cortezaproject/corteza/issues/2358",
+          "closed_at": "2026-10-02T19:19:34Z",
+          "is_pr": false
+        },
+        {
+          "number": 2357,
+          "title": "Visibility expression for automation block buttons",
+          "url": "https://github.com/cortezaproject/corteza/issues/2357",
+          "closed_at": "2026-10-02T11:08:54Z",
+          "is_pr": false
+        }
+      ],
+      "public_security_advisories_sample": [
+        {
+          "id": "GHSA-rr6q-8jvx-4mxr",
+          "url": "https://github.com/cortezaproject/corteza/security/advisories/GHSA-rr6q-8jvx-4mxr",
+          "published_at": "2026-09-21T08:33:33Z",
+          "severity": "medium",
+          "summary": "Corteza 2024.9.8 - SQL Injection in MSSQL JSON-path meta filter via incorrect T-SQL string escaping",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "go",
+                "name": "github.com/cortezaproject/corteza/server"
+              },
+              "vulnerable_version_range": "< 2024.9.10",
+              "patched_versions": "2024.9.10",
+              "vulnerable_functions": []
+            }
+          ]
+        }
+      ],
+      "advisory_limit": 5,
+      "access_errors": []
+    },
+    {
+      "id": "frappe",
+      "repository": "frappe/frappe",
+      "repository_url": "https://github.com/frappe/frappe",
+      "owner": "frappe",
+      "owner_type": "Organization",
+      "category": "B",
+      "official_docs": "https://docs.frappe.io/framework",
+      "edition_boundary": "Framework 单独评估；ERPNext/其他 apps 不纳入许可推断",
+      "license_observation": "MIT",
+      "accessed_at": "2026-10-11T15:28:24.701Z",
+      "access_timezone": "Asia/Shanghai",
+      "default_branch": "develop",
+      "default_head_sha": "44d7ce7d4c0ea71593f6c8621e9c9a1974eda029",
+      "reviewed_sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "reviewed_version": "v16.51.1",
+      "latest_confirmed_github_release": {
+        "tag": "v16.51.1",
+        "published_at": "2026-10-11T12:22:26Z",
+        "url": "https://github.com/frappe/frappe/releases/tag/v16.51.1",
+        "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b"
+      },
+      "archived": false,
+      "pushed_at": "2026-10-11T15:08:45Z",
+      "release_listing_limit": 10,
+      "issues_sample": [
+        {
+          "number": 44283,
+          "title": "fix(webhook): use shared request session",
+          "url": "https://github.com/frappe/frappe/pull/44283",
+          "closed_at": "2026-10-11T15:08:45Z",
+          "is_pr": true
+        },
+        {
+          "number": 44282,
+          "title": "fix(realtime): build web-process URL from server config",
+          "url": "https://github.com/frappe/frappe/pull/44282",
+          "closed_at": "2026-10-11T14:09:57Z",
+          "is_pr": true
+        },
+        {
+          "number": 44280,
+          "title": "fix(reports): drop with_link_titles from report view exports (backport #42977) (backport #44089)",
+          "url": "https://github.com/frappe/frappe/pull/44280",
+          "closed_at": "2026-10-11T12:10:23Z",
+          "is_pr": true
+        }
+      ],
+      "public_security_advisories_sample": [
+        {
+          "id": "GHSA-wrh5-p77r-jpvq",
+          "url": "https://github.com/frappe/frappe/security/advisories/GHSA-wrh5-p77r-jpvq",
+          "published_at": "2026-09-28T03:40:47Z",
+          "severity": "high",
+          "summary": "Unauthorized users can send sms via the API",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "pip",
+                "name": "frappe"
+              },
+              "vulnerable_version_range": "<v16.33.0",
+              "patched_versions": "v16.33.0",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "pip",
+                "name": "frappe"
+              },
+              "vulnerable_version_range": "<v15.120.0",
+              "patched_versions": "v15.120.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-p4w2-9mr5-6prj",
+          "url": "https://github.com/frappe/frappe/security/advisories/GHSA-p4w2-9mr5-6prj",
+          "published_at": "2026-10-07T14:28:51Z",
+          "severity": "medium",
+          "summary": "Blind SQL Injection in frappe.desk.doctype.event.event.get_events",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "pip",
+                "name": "frappe"
+              },
+              "vulnerable_version_range": "<16.33.0",
+              "patched_versions": "16.33.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-h9jq-7pgf-hw8q",
+          "url": "https://github.com/frappe/frappe/security/advisories/GHSA-h9jq-7pgf-hw8q",
+          "published_at": "2026-10-01T05:27:13Z",
+          "severity": "medium",
+          "summary": "restrict_ip allowlist bypassed for API key, OAuth, and header-based authentication",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "pip",
+                "name": "frappe"
+              },
+              "vulnerable_version_range": "<16.33.0",
+              "patched_versions": "16.33.0",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "pip",
+                "name": "frappe"
+              },
+              "vulnerable_version_range": "<15.120.0",
+              "patched_versions": "15.120.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-22v9-hw3x-x59w",
+          "url": "https://github.com/frappe/frappe/security/advisories/GHSA-22v9-hw3x-x59w",
+          "published_at": "2026-08-11T09:43:07Z",
+          "severity": "medium",
+          "summary": "Unauthorised modification of records due to missing validation",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "pip",
+                "name": "frappe"
+              },
+              "vulnerable_version_range": "< 15.113.3",
+              "patched_versions": "15.113.3",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "pip",
+                "name": "frappe"
+              },
+              "vulnerable_version_range": "< 16.25.0",
+              "patched_versions": "16.25.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-55m4-gj6h-q6rc",
+          "url": "https://github.com/frappe/frappe/security/advisories/GHSA-55m4-gj6h-q6rc",
+          "published_at": "2026-09-11T07:30:15Z",
+          "severity": "medium",
+          "summary": "Disabled users continue to receive Document Follow email notifications",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "pip",
+                "name": "frappe"
+              },
+              "vulnerable_version_range": "<16.31.0",
+              "patched_versions": "16.31.0",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "pip",
+                "name": "frappe"
+              },
+              "vulnerable_version_range": "<15.118.0",
+              "patched_versions": "15.118.0",
+              "vulnerable_functions": []
+            }
+          ]
+        }
+      ],
+      "advisory_limit": 5,
+      "access_errors": []
+    },
+    {
+      "id": "axelor",
+      "repository": "axelor/axelor-open-platform",
+      "repository_url": "https://github.com/axelor/axelor-open-platform",
+      "owner": "axelor",
+      "owner_type": "Organization",
+      "category": "A",
+      "official_docs": "https://docs.axelor.com/adk/8.2/index.html",
+      "edition_boundary": "Open Platform 与 Open Suite/Studio 分开",
+      "license_observation": "AGPL-3.0",
+      "accessed_at": "2026-10-11T15:28:37.442Z",
+      "access_timezone": "Asia/Shanghai",
+      "default_branch": "main",
+      "default_head_sha": "705e2f301eddd1508db75a86c8921f02898df6a4",
+      "reviewed_sha": "705e2f301eddd1508db75a86c8921f02898df6a4",
+      "reviewed_version": "v8.2.4",
+      "latest_confirmed_github_release": {
+        "tag": "v8.2.4",
+        "published_at": "2026-10-07T08:25:52Z",
+        "url": "https://github.com/axelor/axelor-open-platform/releases/tag/v8.2.4",
+        "sha": "705e2f301eddd1508db75a86c8921f02898df6a4"
+      },
+      "archived": false,
+      "pushed_at": "2026-10-09T19:22:06Z",
+      "release_listing_limit": 10,
+      "issues_sample": [
+        {
+          "number": 144,
+          "title": "typo in tutorial document: quotation mark is added",
+          "url": "https://github.com/axelor/axelor-open-platform/pull/144",
+          "closed_at": "2025-09-20T05:43:55Z",
+          "is_pr": true
+        },
+        {
+          "number": 141,
+          "title": "[kanban] Support \"orderby\"",
+          "url": "https://github.com/axelor/axelor-open-platform/issues/141",
+          "closed_at": "2025-04-03T10:39:35Z",
+          "is_pr": false
+        },
+        {
+          "number": 139,
+          "title": "Update step1.adoc",
+          "url": "https://github.com/axelor/axelor-open-platform/pull/139",
+          "closed_at": "2025-07-19T08:16:05Z",
+          "is_pr": true
+        }
+      ],
+      "public_security_advisories_sample": [],
+      "advisory_limit": 5,
+      "access_errors": []
+    },
+    {
+      "id": "jmix",
+      "repository": "jmix-framework/jmix",
+      "repository_url": "https://github.com/jmix-framework/jmix",
+      "owner": "jmix-framework",
+      "owner_type": "Organization",
+      "category": "A",
+      "official_docs": "https://docs.jmix.io/jmix/index.html",
+      "edition_boundary": "开源核心/Dynamic Attributes 与 Enterprise 实验 Dynamic Model 分开",
+      "license_observation": "Apache-2.0 core; commercial Dynamic Model",
+      "accessed_at": "2026-10-11T15:28:48.936Z",
+      "access_timezone": "Asia/Shanghai",
+      "default_branch": "master",
+      "default_head_sha": "e86d892a6f56c1feecfb7091e795bfcc87111484",
+      "reviewed_sha": "258a2da9fea93dcc2d4d0a75cb4f9516805d3068",
+      "reviewed_version": "v3.0.3",
+      "latest_confirmed_github_release": {
+        "tag": "v3.0.3",
+        "published_at": "2026-10-06T13:08:39Z",
+        "url": "https://github.com/jmix-framework/jmix/releases/tag/v3.0.3",
+        "sha": "258a2da9fea93dcc2d4d0a75cb4f9516805d3068"
+      },
+      "archived": false,
+      "pushed_at": "2026-10-09T12:46:30Z",
+      "release_listing_limit": 10,
+      "issues_sample": [
+        {
+          "number": 5789,
+          "title": "Dynamic Model AI Builder: Check Jmix Database fails on the enum attributes of AgentConversationMessage",
+          "url": "https://github.com/jmix-framework/jmix/issues/5789",
+          "closed_at": "2026-10-08T14:00:59Z",
+          "is_pr": false
+        },
+        {
+          "number": 5786,
+          "title": "french i18n fix",
+          "url": "https://github.com/jmix-framework/jmix/pull/5786",
+          "closed_at": "2026-10-09T08:11:34Z",
+          "is_pr": true
+        },
+        {
+          "number": 5778,
+          "title": "Deploying a decision table with empty fields leads to IndexOutOfBoundsException",
+          "url": "https://github.com/jmix-framework/jmix/issues/5778",
+          "closed_at": "2026-10-09T17:07:15Z",
+          "is_pr": false
+        }
+      ],
+      "public_security_advisories_sample": [
+        {
+          "id": "GHSA-f3gv-cwwh-758m",
+          "url": "https://github.com/jmix-framework/jmix/security/advisories/GHSA-f3gv-cwwh-758m",
+          "published_at": "2025-04-22T09:42:08Z",
+          "severity": "medium",
+          "summary": "DoS in the Local File Storage",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "maven",
+                "name": "io.jmix.localfs:jmix-localfs"
+              },
+              "vulnerable_version_range": "1.0.0 - 1.6.1, 2.0.0 - 2.3.4",
+              "patched_versions": "1.6.2, 2.4.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-x27v-f838-jh93",
+          "url": "https://github.com/jmix-framework/jmix/security/advisories/GHSA-x27v-f838-jh93",
+          "published_at": "2025-04-22T09:41:57Z",
+          "severity": "low",
+          "summary": "XSS in the /files Endpoint of the Generic REST API",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "maven",
+                "name": "io.jmix.rest:jmix-rest"
+              },
+              "vulnerable_version_range": "1.0.0 - 1.6.1, 2.0.0 - 2.3.4",
+              "patched_versions": "1.6.2, 2.4.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-jx4g-3xqm-62vh",
+          "url": "https://github.com/jmix-framework/jmix/security/advisories/GHSA-jx4g-3xqm-62vh",
+          "published_at": "2025-04-22T09:41:51Z",
+          "severity": "medium",
+          "summary": "Path Traversal in Local File Storage",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "maven",
+                "name": "io.jmix.localfs:jmix-localfs"
+              },
+              "vulnerable_version_range": "1.0.0 - 1.6.1, 2.0.0 - 2.3.4",
+              "patched_versions": "1.6.2, 2.4.0",
+              "vulnerable_functions": []
+            }
+          ]
+        }
+      ],
+      "advisory_limit": 5,
+      "access_errors": []
+    },
+    {
+      "id": "nop",
+      "repository": "entropy-cloud/nop-entropy",
+      "repository_url": "https://github.com/entropy-cloud/nop-entropy",
+      "owner": "entropy-cloud",
+      "owner_type": "User",
+      "category": "A/C",
+      "official_docs": "https://nop-platform.github.io/",
+      "edition_boundary": "Nop 核心；README 与许可/包说明冲突待核定",
+      "license_observation": "Apache-2.0 texts/pom; README says backend AGPL and SME exception",
+      "accessed_at": "2026-10-11T15:28:57.211Z",
+      "access_timezone": "Asia/Shanghai",
+      "default_branch": "master",
+      "default_head_sha": "6e097ee235584d7be46f8a51bb031ef5be5e57f1",
+      "reviewed_sha": "b06ee33095bb302e4305ea8c308703ef99528d2d",
+      "reviewed_version": "20251210",
+      "latest_confirmed_github_release": {
+        "tag": "20251210",
+        "published_at": "2025-12-10T14:48:07Z",
+        "url": "https://github.com/entropy-cloud/nop-entropy/releases/tag/20251210",
+        "sha": "b06ee33095bb302e4305ea8c308703ef99528d2d"
+      },
+      "archived": false,
+      "pushed_at": "2026-10-03T14:20:25Z",
+      "release_listing_limit": 10,
+      "issues_sample": [
+        {
+          "number": 6,
+          "title": "能否为前后端的文档提供搜索功能",
+          "url": "https://github.com/entropy-cloud/nop-entropy/issues/6",
+          "closed_at": "2026-02-11T02:21:18Z",
+          "is_pr": false
+        },
+        {
+          "number": 5,
+          "title": "upgrade maven compiler version",
+          "url": "https://github.com/entropy-cloud/nop-entropy/pull/5",
+          "closed_at": "2025-04-07T12:43:11Z",
+          "is_pr": true
+        },
+        {
+          "number": 4,
+          "title": "弱弱的问一句，这个项目是认真的吗",
+          "url": "https://github.com/entropy-cloud/nop-entropy/issues/4",
+          "closed_at": "2023-12-21T09:15:01Z",
+          "is_pr": false
+        }
+      ],
+      "public_security_advisories_sample": [],
+      "advisory_limit": 5,
+      "access_errors": []
+    },
+    {
+      "id": "jeecg",
+      "repository": "jeecgboot/JeecgBoot",
+      "repository_url": "https://github.com/jeecgboot/JeecgBoot",
+      "owner": "jeecgboot",
+      "owner_type": "Organization",
+      "category": "A/C",
+      "official_docs": "https://www.jeecg.com/",
+      "edition_boundary": "公开仓库、Online binary、BPM/商业版分别审查",
+      "license_observation": "Apache/MIT texts + module non-competition restrictions",
+      "accessed_at": "2026-10-11T15:29:04.754Z",
+      "access_timezone": "Asia/Shanghai",
+      "default_branch": "main",
+      "default_head_sha": "87d7f938d47d2585618bcfc5a31d125801cbff27",
+      "reviewed_sha": "e3b9dc0aefe1943d9772b026f64ed671a7c82802",
+      "reviewed_version": "v3.9.5",
+      "latest_confirmed_github_release": {
+        "tag": "v3.9.5",
+        "published_at": "2026-08-27T03:29:52Z",
+        "url": "https://github.com/jeecgboot/JeecgBoot/releases/tag/v3.9.5",
+        "sha": "e3b9dc0aefe1943d9772b026f64ed671a7c82802"
+      },
+      "archived": false,
+      "pushed_at": "2026-09-22T14:26:15Z",
+      "release_listing_limit": 10,
+      "issues_sample": [
+        {
+          "number": 9904,
+          "title": "低代码平台的流程审批表单，怎么配置？",
+          "url": "https://github.com/jeecgboot/JeecgBoot/issues/9904",
+          "closed_at": "2026-10-10T08:56:57Z",
+          "is_pr": false
+        },
+        {
+          "number": 9894,
+          "title": "积木报表模板中心打不开",
+          "url": "https://github.com/jeecgboot/JeecgBoot/issues/9894",
+          "closed_at": "2026-09-20T10:29:04Z",
+          "is_pr": false
+        },
+        {
+          "number": 9893,
+          "title": "积木报表AI生成报表返回空数据",
+          "url": "https://github.com/jeecgboot/JeecgBoot/issues/9893",
+          "closed_at": "2026-09-23T07:12:32Z",
+          "is_pr": false
+        }
+      ],
+      "public_security_advisories_sample": [
+        {
+          "id": "GHSA-cxjx-4v5m-2vfx",
+          "url": "https://github.com/jeecgboot/JeecgBoot/security/advisories/GHSA-cxjx-4v5m-2vfx",
+          "published_at": "2026-09-21T14:01:16Z",
+          "severity": "high",
+          "summary": "[Security] Unauthenticated SQL injection in `/jmreport/qurestSql` — `${param}` substitution is still raw concatenation in jimureport 2.5.2, reachable without credentials via any active password-less share",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "maven",
+                "name": "org.jeecgframework.jimureport:jimureport-spring-boot4-starter"
+              },
+              "vulnerable_version_range": "= 2.5.2",
+              "patched_versions": "",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-7wcq-939v-pcrg",
+          "url": "https://github.com/jeecgboot/JeecgBoot/security/advisories/GHSA-7wcq-939v-pcrg",
+          "published_at": "2026-09-11T08:08:29Z",
+          "severity": "medium",
+          "summary": "数据源管理接口泄露数据库连接凭据",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "maven",
+                "name": "org.jeecgframework.boot"
+              },
+              "vulnerable_version_range": "3.9.5",
+              "patched_versions": "",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-4c6j-45p9-rhrw",
+          "url": "https://github.com/jeecgboot/JeecgBoot/security/advisories/GHSA-4c6j-45p9-rhrw",
+          "published_at": "2026-09-12T08:35:38Z",
+          "severity": "high",
+          "summary": "Missing authorization on /sys/fillRule/importExcel allows non-admin users to create and read fill rules",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "maven",
+                "name": "org.jeecgframework.boot3:jeecg-boot-parent"
+              },
+              "vulnerable_version_range": ">= 3.9.2, <= 3.9.5",
+              "patched_versions": "",
+              "vulnerable_functions": []
+            }
+          ]
+        }
+      ],
+      "advisory_limit": 5,
+      "access_errors": []
+    },
+    {
+      "id": "directus",
+      "repository": "directus/directus",
+      "repository_url": "https://github.com/directus/directus",
+      "owner": "directus",
+      "owner_type": "Organization",
+      "category": "B",
+      "official_docs": "https://directus.io/docs",
+      "edition_boundary": "当前 12.5.0；不能套用旧 BSL 财务门槛",
+      "license_observation": "MSCL-1.0-GPL",
+      "accessed_at": "2026-10-11T15:29:19.176Z",
+      "access_timezone": "Asia/Shanghai",
+      "default_branch": "main",
+      "default_head_sha": "8e140f94250834cea0a0fb6eb822cac39ed9faec",
+      "reviewed_sha": "4f77933bf9551cac6b289576078783e189b8f4e3",
+      "reviewed_version": "v12.5.0",
+      "latest_confirmed_github_release": {
+        "tag": "v12.5.0",
+        "published_at": "2026-10-07T18:44:06Z",
+        "url": "https://github.com/directus/directus/releases/tag/v12.5.0",
+        "sha": "4f77933bf9551cac6b289576078783e189b8f4e3"
+      },
+      "archived": false,
+      "pushed_at": "2026-10-09T21:45:12Z",
+      "release_listing_limit": 10,
+      "issues_sample": [
+        {
+          "number": 28351,
+          "title": "Title: Add tests for AI store chat callbacks and token usage",
+          "url": "https://github.com/directus/directus/pull/28351",
+          "closed_at": "2026-10-08T20:36:08Z",
+          "is_pr": true
+        },
+        {
+          "number": 28348,
+          "title": "Show public permission notices for any policy within the public role",
+          "url": "https://github.com/directus/directus/pull/28348",
+          "closed_at": "2026-10-09T18:50:24Z",
+          "is_pr": true
+        },
+        {
+          "number": 28342,
+          "title": "Fix revisions sidebar showing 0 updated fields for relational edits",
+          "url": "https://github.com/directus/directus/pull/28342",
+          "closed_at": "2026-10-08T13:40:17Z",
+          "is_pr": true
+        }
+      ],
+      "public_security_advisories_sample": [
+        {
+          "id": "GHSA-7h45-q5jx-7r87",
+          "url": "https://github.com/directus/directus/security/advisories/GHSA-7h45-q5jx-7r87",
+          "published_at": "2026-09-02T15:02:48Z",
+          "severity": "medium",
+          "summary": "Share update allows reassigning user_created and role",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "directus"
+              },
+              "vulnerable_version_range": "<12.2.0",
+              "patched_versions": "12.3.1",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-8xp8-xrh2-88vr",
+          "url": "https://github.com/directus/directus/security/advisories/GHSA-8xp8-xrh2-88vr",
+          "published_at": "2026-09-02T15:07:13Z",
+          "severity": "medium",
+          "summary": "Public registration sends the verification email to the submitted address instead of the matched account",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "directus"
+              },
+              "vulnerable_version_range": ">= 10.11.0, < 12.3.1",
+              "patched_versions": "12.3.1",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-gwvv-rr68-cmv6",
+          "url": "https://github.com/directus/directus/security/advisories/GHSA-gwvv-rr68-cmv6",
+          "published_at": "2026-08-20T16:44:55Z",
+          "severity": "high",
+          "summary": "Unauthenticated persistent Denial of Service via prototype pollution in the `deep` query parameter",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "directus"
+              },
+              "vulnerable_version_range": "< 12.2.0",
+              "patched_versions": "12.2.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-97xr-jchp-xm3c",
+          "url": "https://github.com/directus/directus/security/advisories/GHSA-97xr-jchp-xm3c",
+          "published_at": "2026-08-05T14:10:57Z",
+          "severity": "critical",
+          "summary": "Directus public WebSocket clients gain unrestricted item access after a failed auth message",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "directus"
+              },
+              "vulnerable_version_range": "< 12.1.0",
+              "patched_versions": "12.1.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-4jw7-6mqj-vrhq",
+          "url": "https://github.com/directus/directus/security/advisories/GHSA-4jw7-6mqj-vrhq",
+          "published_at": "2026-08-20T16:30:17Z",
+          "severity": "high",
+          "summary": "Server-side request forgery in AI chat file downloads bypasses the outbound IP deny-list",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "directus"
+              },
+              "vulnerable_version_range": ">= 11.16.0, < 12.2.0",
+              "patched_versions": "12.2.0",
+              "vulnerable_functions": []
+            }
+          ]
+        }
+      ],
+      "advisory_limit": 5,
+      "access_errors": []
+    },
+    {
+      "id": "twenty",
+      "repository": "twentyhq/twenty",
+      "repository_url": "https://github.com/twentyhq/twenty",
+      "owner": "twentyhq",
+      "owner_type": "Organization",
+      "category": "B",
+      "official_docs": "https://docs.twenty.com/",
+      "edition_boundary": "AGPL 社区、Enterprise 文件、MIT SDK 与 Application Exception 分开",
+      "license_observation": "AGPL-3.0 + Application Exception; commercial Enterprise files; MIT SDKs",
+      "accessed_at": "2026-10-11T15:29:34.431Z",
+      "access_timezone": "Asia/Shanghai",
+      "default_branch": "main",
+      "default_head_sha": "2f9bd3aa6bcffe2095beeff19296d53a43819188",
+      "reviewed_sha": "7e1431c84adbb264db98ab8b8d008a8401b6d4d6",
+      "reviewed_version": "twenty/v2.45.0",
+      "latest_confirmed_github_release": {
+        "tag": "twenty/v2.45.0",
+        "published_at": "2026-10-05T15:27:44Z",
+        "url": "https://github.com/twentyhq/twenty/releases/tag/twenty/v2.45.0",
+        "sha": "7e1431c84adbb264db98ab8b8d008a8401b6d4d6"
+      },
+      "archived": false,
+      "pushed_at": "2026-10-11T15:22:53Z",
+      "release_listing_limit": 10,
+      "issues_sample": [
+        {
+          "number": 27789,
+          "title": "Spell out the security contact email in SECURITY.md",
+          "url": "https://github.com/twentyhq/twenty/pull/27789",
+          "closed_at": "2026-10-11T14:22:46Z",
+          "is_pr": true
+        },
+        {
+          "number": 27786,
+          "title": "Follow shared chats only when taking part in them, and track what members read",
+          "url": "https://github.com/twentyhq/twenty/pull/27786",
+          "closed_at": "2026-10-11T14:53:03Z",
+          "is_pr": true
+        },
+        {
+          "number": 27784,
+          "title": "i18n - translations",
+          "url": "https://github.com/twentyhq/twenty/pull/27784",
+          "closed_at": "2026-10-11T13:08:06Z",
+          "is_pr": true
+        }
+      ],
+      "public_security_advisories_sample": [
+        {
+          "id": "GHSA-v93q-4jcx-7p9m",
+          "url": "https://github.com/twentyhq/twenty/security/advisories/GHSA-v93q-4jcx-7p9m",
+          "published_at": "2026-09-02T12:16:51Z",
+          "severity": "medium",
+          "summary": "Field-level read bypass via filter predicate (boolean/count oracle)",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": ""
+              },
+              "vulnerable_version_range": "< 2.22.0",
+              "patched_versions": "2.22.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-mm7j-q9q3-qqwj",
+          "url": "https://github.com/twentyhq/twenty/security/advisories/GHSA-mm7j-q9q3-qqwj",
+          "published_at": "2026-07-27T11:28:05Z",
+          "severity": "critical",
+          "summary": "SQL Injection in Twenty `searchVector` Field Settings Allows Arbitrary PostgreSQL Execution",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "twentyhq/twenty"
+              },
+              "vulnerable_version_range": "< 2.15.0",
+              "patched_versions": "2.15.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-v39r-w5vg-j9pp",
+          "url": "https://github.com/twentyhq/twenty/security/advisories/GHSA-v39r-w5vg-j9pp",
+          "published_at": "2026-06-17T16:13:44Z",
+          "severity": "high",
+          "summary": "Cross-workspace IDOR in AgentTurnResolver ",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": ""
+              },
+              "vulnerable_version_range": "<2.9.0",
+              "patched_versions": "",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-mq5c-qp77-2cv3",
+          "url": "https://github.com/twentyhq/twenty/security/advisories/GHSA-mq5c-qp77-2cv3",
+          "published_at": "2026-09-01T13:08:08Z",
+          "severity": "critical",
+          "summary": "Plaintext IMAP/SMTP/CalDAV password disclosure to any workspace member via /metadata GraphQL",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "other",
+                "name": "twentyhq/twenty"
+              },
+              "vulnerable_version_range": ">= 1.20.10, < 2.7.0",
+              "patched_versions": "2.7.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-jgx4-6mr9-9573",
+          "url": "https://github.com/twentyhq/twenty/security/advisories/GHSA-jgx4-6mr9-9573",
+          "published_at": "2026-05-17T19:36:32Z",
+          "severity": "critical",
+          "summary": "SQL Injection on  v <=1.16.7",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": "TwentyCRM"
+              },
+              "vulnerable_version_range": "<=1.16.7",
+              "patched_versions": "1.16.7",
+              "vulnerable_functions": []
+            }
+          ]
+        }
+      ],
+      "advisory_limit": 5,
+      "access_errors": []
+    },
+    {
+      "id": "saltcorn",
+      "repository": "saltcorn/saltcorn",
+      "repository_url": "https://github.com/saltcorn/saltcorn",
+      "owner": "saltcorn",
+      "owner_type": "Organization",
+      "category": "B",
+      "official_docs": "https://wiki.saltcorn.com/",
+      "edition_boundary": "稳定版 1.6.2 与默认分支 1.7.0-beta.3 分开",
+      "license_observation": "MIT",
+      "accessed_at": "2026-10-11T15:29:51.253Z",
+      "access_timezone": "Asia/Shanghai",
+      "default_branch": "master",
+      "default_head_sha": "fb166dad6ae0f91f8b7125413e71881d1c2efc52",
+      "reviewed_sha": "fb166dad6ae0f91f8b7125413e71881d1c2efc52",
+      "reviewed_version": "1.7.0-beta.3 (default-branch snapshot)",
+      "latest_confirmed_github_release": null,
+      "latest_confirmed_stable": {
+        "version": "1.6.2",
+        "tag": "v1.6.2",
+        "sha": "596c3aed0662156af4d8c5e02d0fdfa4b874c52e",
+        "published_at": "2026-08-05T21:28:44.054Z",
+        "source": "official npm @saltcorn/cli + git annotated tag",
+        "github_release_exists": false
+      },
+      "archived": false,
+      "pushed_at": "2026-10-09T14:40:02Z",
+      "release_listing_limit": 10,
+      "issues_sample": [
+        {
+          "number": 4440,
+          "title": "Postgres tables support: fix discoverable table. fix joinfields onto provided tables",
+          "url": "https://github.com/saltcorn/saltcorn/pull/4440",
+          "closed_at": "2026-10-08T10:13:16Z",
+          "is_pr": true
+        },
+        {
+          "number": 4438,
+          "title": "Bump nodemailer from 6.10.1 to 10.0.16",
+          "url": "https://github.com/saltcorn/saltcorn/pull/4438",
+          "closed_at": "2026-10-08T14:17:03Z",
+          "is_pr": true
+        },
+        {
+          "number": 4435,
+          "title": "Translation fallback, postgres-tables shim fix, deep clean also plugin modules",
+          "url": "https://github.com/saltcorn/saltcorn/pull/4435",
+          "closed_at": "2026-10-08T07:07:39Z",
+          "is_pr": true
+        }
+      ],
+      "public_security_advisories_sample": [
+        {
+          "id": "GHSA-8jg8-7c8w-x873",
+          "url": "https://github.com/saltcorn/saltcorn/security/advisories/GHSA-8jg8-7c8w-x873",
+          "published_at": "2026-08-06T10:50:43Z",
+          "severity": "high",
+          "summary": "Unauthenticated JavaScript code injection into server-side expression evaluation via crafted request body keys (`isValidJsIdentifier` bypass)",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": ""
+              },
+              "vulnerable_version_range": "<=1.6.0",
+              "patched_versions": "1.6.1, 1.5.9",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-j86v-82rx-c23w",
+          "url": "https://github.com/saltcorn/saltcorn/security/advisories/GHSA-j86v-82rx-c23w",
+          "published_at": "2026-08-06T10:52:06Z",
+          "severity": "critical",
+          "summary": "Stored XSS in as_link field view via unvalidated javascript: href",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "@saltcorn/data"
+              },
+              "vulnerable_version_range": "<= 1.6.0",
+              "patched_versions": "1.6.1, 1.5.9",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-rqhj-cx9g-fw5p",
+          "url": "https://github.com/saltcorn/saltcorn/security/advisories/GHSA-rqhj-cx9g-fw5p",
+          "published_at": "2026-08-06T10:56:18Z",
+          "severity": "high",
+          "summary": "Multi-tenant isolation bypass: a session authenticated in one tenant is honored on every other tenant's `/api` routes, exposing other tenants' table data",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "self-hosted",
+                "name": "saltcorn/saltcorn"
+              },
+              "vulnerable_version_range": "<= 1.6.0-rc.2",
+              "patched_versions": "1.6.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-x5w8-xvw8-x24m",
+          "url": "https://github.com/saltcorn/saltcorn/security/advisories/GHSA-x5w8-xvw8-x24m",
+          "published_at": "2026-08-06T10:57:25Z",
+          "severity": "critical",
+          "summary": "Reflected XSS and JS Sandbox Escape can be chained for 1-click-RCE",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "@saltcorn/server"
+              },
+              "vulnerable_version_range": "1.5.7, 1.6.0-rc.2",
+              "patched_versions": "1.6.0-rc.4",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "id": "GHSA-2729-rgj2-rq44",
+          "url": "https://github.com/saltcorn/saltcorn/security/advisories/GHSA-2729-rgj2-rq44",
+          "published_at": "2026-08-05T16:38:24Z",
+          "severity": "critical",
+          "summary": "Cross-tenant authorization bypass via malformed authority parsing and missing session-tenant binding",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "@saltcorn/server"
+              },
+              "vulnerable_version_range": "<=1.6.0-beta.1",
+              "patched_versions": "1.6.0, 1.5.9",
+              "vulnerable_functions": []
+            }
+          ]
+        }
+      ],
+      "advisory_limit": 5,
+      "access_errors": []
+    },
+    {
+      "id": "frappe_mcp",
+      "repository": "frappe/mcp",
+      "repository_url": "https://github.com/frappe/mcp",
+      "owner": "frappe",
+      "owner_type": "Organization",
+      "category": "C",
+      "official_docs": "https://github.com/frappe/mcp",
+      "edition_boundary": "官方组织附属实验库；不是 Framework 内置能力",
+      "license_observation": "MIT",
+      "accessed_at": "2026-10-11T16:02:49.740Z",
+      "access_timezone": "Asia/Shanghai",
+      "default_branch": "main",
+      "default_head_sha": "11d5076b1bf4483b2ff6751a13e0736f5396b1e6",
+      "reviewed_sha": "11d5076b1bf4483b2ff6751a13e0736f5396b1e6",
+      "reviewed_version": "0.1.1 source snapshot; no GitHub Release",
+      "latest_confirmed_github_release": null,
+      "archived": false,
+      "pushed_at": "2026-05-29T08:46:55Z",
+      "release_listing_limit": 10,
+      "issues_sample": [
+        {
+          "number": 4,
+          "title": "feat: Update Click dependency version constraints",
+          "url": "https://github.com/frappe/mcp/pull/4",
+          "closed_at": "2026-05-28T19:13:28Z",
+          "is_pr": true
+        },
+        {
+          "number": 1,
+          "title": "Is “mcp” intended to be a drop-in Frappe App? Trouble installing with bench get-app",
+          "url": "https://github.com/frappe/mcp/issues/1",
+          "closed_at": "2025-08-06T06:50:08Z",
+          "is_pr": false
+        }
+      ],
+      "public_security_advisories_sample": [],
+      "advisory_limit": 5,
+      "access_errors": [],
+      "latest_confirmed_pypi_release": {
+        "version": "0.1.0",
+        "uploaded_at": "2025-07-07T08:47:47.599994Z",
+        "files": [
+          {
+            "filename": "frappe_mcp-0.1.0-py3-none-any.whl",
+            "sha256": "4147f978eabea5d87ad62ef03fa8ca7891ddf82c11bc3e5e224ffa3673948d18",
+            "url": "https://files.pythonhosted.org/packages/60/b0/e59b7014941b09434c8b228783bdf7280f46fe054bb3b1d65664d3b2054a/frappe_mcp-0.1.0-py3-none-any.whl"
+          },
+          {
+            "filename": "frappe_mcp-0.1.0.tar.gz",
+            "sha256": "1a2f81f067e0098a74c332b98502f61dee2e7c9c926043e04b3ed2705a7844ab",
+            "url": "https://files.pythonhosted.org/packages/74/9a/0b69ee87fca1473065eefdf729187488bba32f525e66c9fe5070b0e59f6f/frappe_mcp-0.1.0.tar.gz"
+          }
+        ],
+        "source_sha_correspondence": "UNVERIFIED: published 0.1.0 differs from reviewed 0.1.1 snapshot; no matching GitHub Release observed"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "id": "N-LICENSE",
+      "candidate": "nocobase",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "nocobase/nocobase",
+      "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "path": "LICENSE.txt",
+      "line_start": 49,
+      "line_end": 101,
+      "url": "https://github.com/nocobase/nocobase/blob/3b7958ce95ebd2a5467fa0de991f627d1820dfc4/LICENSE.txt#L49-L101",
+      "accessed_at": "2026-10-11T16:47:05.099Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "6599d526e9fc5593cabadc8349d6c947b155c534042f1df6a992ce42ce0b68c9",
+      "supports": "Supplementary terms take precedence; branding and platform distribution restrictions; commercial rights/obligations",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "N-APACHE",
+      "candidate": "nocobase",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "nocobase/nocobase",
+      "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "path": "LICENSE-APACHE.txt",
+      "line_start": 1,
+      "line_end": 177,
+      "url": "https://github.com/nocobase/nocobase/blob/3b7958ce95ebd2a5467fa0de991f627d1820dfc4/LICENSE-APACHE.txt#L1-L177",
+      "accessed_at": "2026-10-11T16:47:05.102Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "8d300fccfb9c50c1c47395b057f41d192603793c7732bcf25c99b7ff75312064",
+      "supports": "Apache text is also present; it does not erase the root supplementary terms",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "N-HOOK",
+      "candidate": "nocobase",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "nocobase/nocobase",
+      "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "path": "packages/plugins/@nocobase/plugin-data-source-main/src/server/server.ts",
+      "line_start": 119,
+      "line_end": 138,
+      "url": "https://github.com/nocobase/nocobase/blob/3b7958ce95ebd2a5467fa0de991f627d1820dfc4/packages/plugins/%40nocobase/plugin-data-source-main/src/server/server.ts#L119-L138",
+      "accessed_at": "2026-10-11T16:47:05.103Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "39f05450e7cdce555dea57c1934b0c39c8537d3a85b36f975b1e61dfe5c7ecd0",
+      "supports": "Metadata save hook invokes CollectionModel.migrate and publishes sync messages",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "N-DDL",
+      "candidate": "nocobase",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "nocobase/nocobase",
+      "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "path": "packages/plugins/@nocobase/plugin-data-source-main/src/server/models/collection.ts",
+      "line_start": 199,
+      "line_end": 245,
+      "url": "https://github.com/nocobase/nocobase/blob/3b7958ce95ebd2a5467fa0de991f627d1820dfc4/packages/plugins/%40nocobase/plugin-data-source-main/src/server/models/collection.ts#L199-L245",
+      "accessed_at": "2026-10-11T16:47:05.103Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "f80da98b7b173ddf9f7a4bfe7b5ae1da6c568077626cfb2fdb12c3979c77447f",
+      "supports": "Runtime collection loading and Sequelize sync with drop:false; cleanup on error",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "N-FIELD",
+      "candidate": "nocobase",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "nocobase/nocobase",
+      "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "path": "packages/plugins/@nocobase/plugin-data-source-main/src/server/models/field.ts",
+      "line_start": 53,
+      "line_end": 88,
+      "url": "https://github.com/nocobase/nocobase/blob/3b7958ce95ebd2a5467fa0de991f627d1820dfc4/packages/plugins/%40nocobase/plugin-data-source-main/src/server/models/field.ts#L53-L88",
+      "accessed_at": "2026-10-11T16:47:05.104Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "a601fdca603688e9fb6a462026af28d34b4d2b89d15d6b0dba72eecf76b6a7b8",
+      "supports": "Runtime setField and in-memory rollback listener",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "N-QUERY-ACL",
+      "candidate": "nocobase",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "nocobase/nocobase",
+      "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "path": "packages/plugins/@nocobase/plugin-acl/src/server/query/apply-query-permission.ts",
+      "line_start": 238,
+      "line_end": 295,
+      "url": "https://github.com/nocobase/nocobase/blob/3b7958ce95ebd2a5467fa0de991f627d1820dfc4/packages/plugins/%40nocobase/plugin-acl/src/server/query/apply-query-permission.ts#L238-L295",
+      "accessed_at": "2026-10-11T16:47:05.104Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "4a0384fbe12b28fde635e8cdacd4ec8fab39d5e7a5100932e855bfa9f8834584",
+      "supports": "Object permission, field selection pruning and row-filter merging in query path",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "N-REPO",
+      "candidate": "nocobase",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "nocobase/nocobase",
+      "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "path": "packages/core/database/src/repository.ts",
+      "line_start": 679,
+      "line_end": 723,
+      "url": "https://github.com/nocobase/nocobase/blob/3b7958ce95ebd2a5467fa0de991f627d1820dfc4/packages/core/database/src/repository.ts#L679-L723",
+      "accessed_at": "2026-10-11T16:47:05.106Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "58919f3dd5c283375fbe6a0202cf9ac4f961ad5dd14d9ec6c2e036f5520a6a85",
+      "supports": "Repository create and nested associations share transaction; does not itself demonstrate user ACL",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "N-FLOW-CREATE",
+      "candidate": "nocobase",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "nocobase/nocobase",
+      "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "path": "packages/plugins/@nocobase/plugin-workflow/src/server/instructions/CreateInstruction.ts",
+      "line_start": 36,
+      "line_end": 69,
+      "url": "https://github.com/nocobase/nocobase/blob/3b7958ce95ebd2a5467fa0de991f627d1820dfc4/packages/plugins/%40nocobase/plugin-workflow/src/server/instructions/CreateInstruction.ts#L36-L69",
+      "accessed_at": "2026-10-11T16:47:05.106Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "d0b17716d928ceaedc20f470837072aa1f2c88212531a9b7c9cc400ecb6818ab",
+      "supports": "Workflow writes directly through repository; supplied context contains execution stack, not demonstrated caller ACL",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "N-FLOW-QUERY",
+      "candidate": "nocobase",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "nocobase/nocobase",
+      "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "path": "packages/plugins/@nocobase/plugin-workflow/src/server/instructions/QueryInstruction.ts",
+      "line_start": 42,
+      "line_end": 71,
+      "url": "https://github.com/nocobase/nocobase/blob/3b7958ce95ebd2a5467fa0de991f627d1820dfc4/packages/plugins/%40nocobase/plugin-workflow/src/server/instructions/QueryInstruction.ts#L42-L71",
+      "accessed_at": "2026-10-11T16:47:05.107Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "7d1d0d0572f7580c5c73838bb048f78dc07ad92a4d8ab7798975c4e7ad6198ea",
+      "supports": "Workflow reads directly through repository rather than the traced HTTP query ACL path",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "N-FLOW-EXT",
+      "candidate": "nocobase",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "nocobase/nocobase",
+      "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "path": "packages/plugins/@nocobase/plugin-workflow/src/server/Plugin.ts",
+      "line_start": 320,
+      "line_end": 354,
+      "url": "https://github.com/nocobase/nocobase/blob/3b7958ce95ebd2a5467fa0de991f627d1820dfc4/packages/plugins/%40nocobase/plugin-workflow/src/server/Plugin.ts#L320-L354",
+      "accessed_at": "2026-10-11T16:47:05.107Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "edfcef125a161431b6b90dbe27a2aba840c5fbdfbdb082fa31ad0b4f11c5486a",
+      "supports": "Concrete workflow instruction registration extension point",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "N-MCP",
+      "candidate": "nocobase",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "nocobase/nocobase",
+      "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "path": "packages/plugins/@nocobase/plugin-mcp-server/src/server/mcp-server.ts",
+      "line_start": 87,
+      "line_end": 171,
+      "url": "https://github.com/nocobase/nocobase/blob/3b7958ce95ebd2a5467fa0de991f627d1820dfc4/packages/plugins/%40nocobase/plugin-mcp-server/src/server/mcp-server.ts#L87-L171",
+      "accessed_at": "2026-10-11T16:47:05.107Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "753336d20c16c12dad7ce7e11cb3bf462f35dca42f3b11e43c8e4bc0fdc12d45",
+      "supports": "Actual Streamable HTTP MCP Server and request token forwarding",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "N-MCP-TOOLS",
+      "candidate": "nocobase",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "nocobase/nocobase",
+      "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "path": "packages/plugins/@nocobase/plugin-mcp-server/src/server/mcp-tools.ts",
+      "line_start": 304,
+      "line_end": 400,
+      "url": "https://github.com/nocobase/nocobase/blob/3b7958ce95ebd2a5467fa0de991f627d1820dfc4/packages/plugins/%40nocobase/plugin-mcp-server/src/server/mcp-tools.ts#L304-L400",
+      "accessed_at": "2026-10-11T16:47:05.108Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "ae66c9fa4eb46638228a4b8bd096735901505169be51cd09fee7f1c60e0ea458",
+      "supports": "Tools generated from package OpenAPI; calls inject application HTTP callback with token context",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "N-MCP-HEADER",
+      "candidate": "nocobase",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "nocobase/nocobase",
+      "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "path": "packages/plugins/@nocobase/plugin-mcp-server/src/server/mcp-server.ts",
+      "line_start": 1,
+      "line_end": 8,
+      "url": "https://github.com/nocobase/nocobase/blob/3b7958ce95ebd2a5467fa0de991f627d1820dfc4/packages/plugins/%40nocobase/plugin-mcp-server/src/server/mcp-server.ts#L1-L8",
+      "accessed_at": "2026-10-11T16:47:05.108Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "753336d20c16c12dad7ce7e11cb3bf462f35dca42f3b11e43c8e4bc0fdc12d45",
+      "supports": "Legacy header says AGPL/commercial while package/root texts differ: license scope ambiguity",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "N-PLUGIN",
+      "candidate": "nocobase",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "nocobase/nocobase",
+      "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "path": "packages/core/server/src/plugin.ts",
+      "line_start": 119,
+      "line_end": 141,
+      "url": "https://github.com/nocobase/nocobase/blob/3b7958ce95ebd2a5467fa0de991f627d1820dfc4/packages/core/server/src/plugin.ts#L119-L141",
+      "accessed_at": "2026-10-11T16:47:05.108Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "97b5d729d343c72ab13e5abe34b7d7268402547ea3c3b019e181fa094158be51",
+      "supports": "Concrete install/load/upgrade/enable/disable lifecycle",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "N-AUTH",
+      "candidate": "nocobase",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "nocobase/nocobase",
+      "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "path": "packages/core/server/src/application.ts",
+      "line_start": 1306,
+      "line_end": 1332,
+      "url": "https://github.com/nocobase/nocobase/blob/3b7958ce95ebd2a5467fa0de991f627d1820dfc4/packages/core/server/src/application.ts#L1306-L1332",
+      "accessed_at": "2026-10-11T16:47:05.109Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "cb25d34451d15859da3216a143b399b5b5154b9f8957021ba9179ca194776722",
+      "supports": "AuthManager construction and auth middleware installation before default data-source handling",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "N-AUDIT-MANIFEST",
+      "candidate": "nocobase",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "nocobase/nocobase",
+      "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "path": "packages/plugins/@nocobase/plugin-audit-logs/package.json",
+      "line_start": 16,
+      "line_end": 25,
+      "url": "https://github.com/nocobase/nocobase/blob/3b7958ce95ebd2a5467fa0de991f627d1820dfc4/packages/plugins/%40nocobase/plugin-audit-logs/package.json#L16-L25",
+      "accessed_at": "2026-10-11T16:47:05.109Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "584f230fcbf2c71092130a8c280675ad924687433616042b2358c59fe43f3406",
+      "supports": "Present audit plugin is deprecated/1.x-only; do not credit it as a verified 2.x audit solution",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "N-ACL-TEST",
+      "candidate": "nocobase",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "EXISTING_TEST_FOUND",
+      "repository": "nocobase/nocobase",
+      "sha": "3b7958ce95ebd2a5467fa0de991f627d1820dfc4",
+      "path": "packages/plugins/@nocobase/plugin-acl/src/server/__tests__/scope.test.ts",
+      "line_start": 15,
+      "line_end": 35,
+      "url": "https://github.com/nocobase/nocobase/blob/3b7958ce95ebd2a5467fa0de991f627d1820dfc4/packages/plugins/%40nocobase/plugin-acl/src/server/__tests__/scope.test.ts#L15-L35",
+      "accessed_at": "2026-10-11T16:47:05.110Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "6f552d2b1dd950379dbd7dad71622716ff6539ad98b95d68dd6345caa96a6517",
+      "supports": "Scope-related upstream tests found; not executed",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-LICENSE",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "LICENSE",
+      "line_start": 1,
+      "line_end": 22,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/LICENSE#L1-L22",
+      "accessed_at": "2026-10-11T16:47:05.110Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "bc6001a54ffcc4ab520424d7dbb85b293578efcdcb7d8f8055e00dddf942e5d7",
+      "supports": "MIT license grants use/modification/distribution subject to preserving notices",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-CUSTOM",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/core/doctype/doctype/doctype.py",
+      "line_start": 328,
+      "line_end": 344,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/core/doctype/doctype/doctype.py#L328-L344",
+      "accessed_at": "2026-10-11T16:47:05.110Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "cf06de43af00c4f9b444c60903965fcf4e849abc6ab06eed9d2e9deec112543a",
+      "supports": "Custom DocType does not require developer mode; standard DocType does",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-MODEL",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/core/doctype/doctype/doctype.py",
+      "line_start": 532,
+      "line_end": 578,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/core/doctype/doctype/doctype.py#L532-L578",
+      "accessed_at": "2026-10-11T16:47:05.111Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "cf06de43af00c4f9b444c60903965fcf4e849abc6ab06eed9d2e9deec112543a",
+      "supports": "DocType update calls updatedb; code templates only for non-custom definitions; clears metadata/user caches",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-DDL",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/database/postgres/schema.py",
+      "line_start": 8,
+      "line_end": 56,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/database/postgres/schema.py#L8-L56",
+      "accessed_at": "2026-10-11T16:47:05.112Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "0a1689a7352655d0ff9c81d4e570ddef84f2bb030f3920231281be5fc8675e05",
+      "supports": "PostgreSQL physical table creation including child parent links; explicit commit boundary",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-DECIMAL",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/database/postgres/database.py",
+      "line_start": 32,
+      "line_end": 39,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/database/postgres/database.py#L32-L39",
+      "accessed_at": "2026-10-11T16:47:05.112Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "680b99ff2e94a0113b8806dbf3f6fc65b12237e65091afb8a3d2b853c6fc2407",
+      "supports": "PostgreSQL decimal is registered to convert to Python float",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-NUMERIC",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/database/postgres/database.py",
+      "line_start": 129,
+      "line_end": 140,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/database/postgres/database.py#L129-L140",
+      "accessed_at": "2026-10-11T16:47:05.112Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "680b99ff2e94a0113b8806dbf3f6fc65b12237e65091afb8a3d2b853c6fc2407",
+      "supports": "Currency storage is decimal(21,9), distinct from Python runtime representation",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-CAST",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/model/base_document.py",
+      "line_start": 545,
+      "line_end": 561,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/model/base_document.py#L545-L561",
+      "accessed_at": "2026-10-11T16:47:05.112Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "61f6242de337314a1ec36dc435d18d853686b9f25deec807d128913bb44cbacd",
+      "supports": "Float-like document fields are converted using flt before normal data operations",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-API",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/api/v1.py",
+      "line_start": 12,
+      "line_end": 88,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/api/v1.py#L12-L88",
+      "accessed_at": "2026-10-11T16:47:05.113Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "93996b93c3aa647df279cf0f14641262bacdf3d28aa84d4cdd03f1f409827abc",
+      "supports": "Automatic resource API routes use document insert/save, read permission and field-level redaction",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-AUTH",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/auth.py",
+      "line_start": 629,
+      "line_end": 745,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/auth.py#L629-L745",
+      "accessed_at": "2026-10-11T16:47:05.113Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "3a618569ec1f273e956d842002e182281345f6b96384368458edfba63106631f",
+      "supports": "OAuth token is verified and server-side token user is bound; API key/secret validation",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-QUERY",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/model/db_query.py",
+      "line_start": 139,
+      "line_end": 151,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/model/db_query.py#L139-L151",
+      "accessed_at": "2026-10-11T16:47:05.113Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "36960ef1046eed8e32b16f1267a0c7f48d3fea40705ec3873784e5ffc4b2f03a",
+      "supports": "Query defaults to session user and checks permissions unless explicitly ignored",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-GETALL",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/__init__.py",
+      "line_start": 1386,
+      "line_end": 1408,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/__init__.py#L1386-L1408",
+      "accessed_at": "2026-10-11T16:47:05.114Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "017ad0e8956587eea411fd64ed9886300460bacc003cacd2ba0fdcddf808d819",
+      "supports": "get_all explicitly bypasses permissions: extension code remains a trusted boundary",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-PERM",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/permissions.py",
+      "line_start": 81,
+      "line_end": 121,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/permissions.py#L81-L121",
+      "accessed_at": "2026-10-11T16:47:05.114Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "ae3c1285b87094fef39c27c4a5f73c258da11f955ce45169ca6b4996558f6bd8",
+      "supports": "Administrator bypass and document-level permission function",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-MIGRATE",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/migrate.py",
+      "line_start": 46,
+      "line_end": 73,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/migrate.py#L46-L73",
+      "accessed_at": "2026-10-11T16:47:05.114Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "aa10ecc380ee6fd9da06ca89ab8744931f255cefa1db533255bf8b90ad2a8efb",
+      "supports": "Per-step commit/rollback wrapper and migration scope, not full environment rollback proof",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-MIGRATE-PHASE",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/migrate.py",
+      "line_start": 145,
+      "line_end": 180,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/migrate.py#L145-L180",
+      "accessed_at": "2026-10-11T16:47:05.114Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "aa10ecc380ee6fd9da06ca89ab8744931f255cefa1db533255bf8b90ad2a8efb",
+      "supports": "Patch, schema, fixture/customization sync stages",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-JOB",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/utils/background_jobs.py",
+      "line_start": 239,
+      "line_end": 280,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/utils/background_jobs.py#L239-L280",
+      "accessed_at": "2026-10-11T16:47:05.115Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "45d721dbb4efb0b609831f2e578c219aba4d1010faa35a9672d41e4e978568bc",
+      "supports": "Background execution sets saved user and handles transaction retry; full chain untested",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-FLOW-DEFAULT",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/automation/doctype/automation_flow/automation_flow.py",
+      "line_start": 128,
+      "line_end": 134,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/automation/doctype/automation_flow/automation_flow.py#L128-L134",
+      "accessed_at": "2026-10-11T16:47:05.115Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "3000240d77cd13cbabd9dae709e84b4cae10933dd9a7c68368f3af29ac05494b",
+      "supports": "Default Automation User is Administrator; must explicitly decide LCP execution policy",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-FLOW-IDENTITY",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/automation_engine/runner.py",
+      "line_start": 175,
+      "line_end": 196,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/automation_engine/runner.py#L175-L196",
+      "accessed_at": "2026-10-11T16:47:05.115Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "b9ace8cf8d6d392598767447d5682f79af5fec782f6b891df112f1bcf4729935",
+      "supports": "Triggering User/Document Owner/configured Automation User execution policies",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-ACTION-SCHEMA",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/automation_engine/actions/base.py",
+      "line_start": 65,
+      "line_end": 114,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/automation_engine/actions/base.py#L65-L114",
+      "accessed_at": "2026-10-11T16:47:05.116Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "85619c3065aa7df77ac57821d99714157e446b673ac042e2382d82a07f8a3c76",
+      "supports": "AutomationAction has params/output schema and transactional marker",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-ACTION-EXT",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/automation_engine/actions/base.py",
+      "line_start": 121,
+      "line_end": 150,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/automation_engine/actions/base.py#L121-L150",
+      "accessed_at": "2026-10-11T16:47:05.116Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "85619c3065aa7df77ac57821d99714157e446b673ac042e2382d82a07f8a3c76",
+      "supports": "automation_actions hook registers app action classes; duplicate action types rejected",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-ACTION-CREATE",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/automation_engine/actions/core.py",
+      "line_start": 96,
+      "line_end": 132,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/automation_engine/actions/core.py#L96-L132",
+      "accessed_at": "2026-10-11T16:47:05.116Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "86fd02c6dd1196eea2e955e4b11032dd6b94f72cd49674a2759ef5c6c5d38037",
+      "supports": "Native CreateDocument action uses new_doc/insert under selected execution identity",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-WORKFLOW",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/model/workflow.py",
+      "line_start": 120,
+      "line_end": 152,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/model/workflow.py#L120-L152",
+      "accessed_at": "2026-10-11T16:47:05.117Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "dca11d1ba5fd98b0ab394a91fff97dfd7d31792f53771d097954ce88811dcee4",
+      "supports": "Workflow transition and self-approval access checks",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-WORKFLOW-STATE",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/model/workflow.py",
+      "line_start": 199,
+      "line_end": 223,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/model/workflow.py#L199-L223",
+      "accessed_at": "2026-10-11T16:47:05.117Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "dca11d1ba5fd98b0ab394a91fff97dfd7d31792f53771d097954ce88811dcee4",
+      "supports": "Workflow uses document save/submit/cancel and queues optional tasks after commit",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-SEARCH",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/utils/global_search.py",
+      "line_start": 480,
+      "line_end": 543,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/utils/global_search.py#L480-L543",
+      "accessed_at": "2026-10-11T16:47:05.118Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "e32b87a104466482ae2ed230c7a92a2336b8a36aa1fff8dcb6f5f4e30b713f1c",
+      "supports": "Global search restricts doctype set and checks record permission on results; field leakage/Chinese/revocation untested",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-UI",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/public/js/frappe/form/layout.js",
+      "line_start": 717,
+      "line_end": 745,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/public/js/frappe/form/layout.js#L717-L745",
+      "accessed_at": "2026-10-11T16:47:05.118Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "87425319ff0d6ae308f835a3ee8a9ae9cf54d90cda388feeda4cac75589ca1bf",
+      "supports": "Metadata-driven visibility and conditional required/read-only fields; UI behavior is not server-side validation proof",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-HOOK",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/model/document.py",
+      "line_start": 1651,
+      "line_end": 1671,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/model/document.py#L1651-L1671",
+      "accessed_at": "2026-10-11T16:47:05.119Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "abf33ec888226c60b63b8f670e28ffb88d0371422413921a42ab4be4e35c6078",
+      "supports": "Document event hooks let apps extend lifecycle without editing core",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-PY",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "pyproject.toml",
+      "line_start": 5,
+      "line_end": 85,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/pyproject.toml#L5-L85",
+      "accessed_at": "2026-10-11T16:47:05.120Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "90ed444a340c0246975e8e8eb993da0770ac75f2f0ab7b06a77d988750f11c8e",
+      "supports": "Framework source requires Python 3.14 and exact Werkzeug 3.1.6 / pydantic~=2.12.5",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-NODE",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "package.json",
+      "line_start": 17,
+      "line_end": 22,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/package.json#L17-L22",
+      "accessed_at": "2026-10-11T16:47:05.120Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "6e23add318448ac0300d5b41d4a32cfb2f46ce6c7845f16d726d2dc862f49708",
+      "supports": "Build manifest requires Node >=24; Desk dependencies differ from React baseline",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-ATTRIBUTIONS",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "attributions.md",
+      "line_start": 1,
+      "line_end": 28,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/attributions.md#L1-L28",
+      "accessed_at": "2026-10-11T16:47:05.120Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "9f2c1e7961d18fea428b90e67bcb19e5e33f255b8fc57989094a8c99cca8489e",
+      "supports": "Third-party attributions exist and are dated; not a complete current SBOM",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "F-PERM-TEST",
+      "candidate": "frappe",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "EXISTING_TEST_FOUND",
+      "repository": "frappe/frappe",
+      "sha": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "path": "frappe/tests/test_permissions.py",
+      "line_start": 107,
+      "line_end": 132,
+      "url": "https://github.com/frappe/frappe/blob/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/tests/test_permissions.py#L107-L132",
+      "accessed_at": "2026-10-11T16:47:05.121Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "41837de9693c4b3b6dc78b3eb25d846bc2c762b0c1cf7e259222d5d76a39f9d5",
+      "supports": "Permission/export test found; not run",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "FM-LICENSE",
+      "candidate": "frappe_mcp",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/mcp",
+      "sha": "11d5076b1bf4483b2ff6751a13e0736f5396b1e6",
+      "path": "LICENSE",
+      "line_start": 1,
+      "line_end": 22,
+      "url": "https://github.com/frappe/mcp/blob/11d5076b1bf4483b2ff6751a13e0736f5396b1e6/LICENSE#L1-L22",
+      "accessed_at": "2026-10-11T16:47:05.122Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "a2f4480ba60bfae28c4565c3fe0af52c654b26a92f2bebf4e05d85051ba6e4b4",
+      "supports": "Official-organization companion library has separate MIT license",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "FM-DEPS",
+      "candidate": "frappe_mcp",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/mcp",
+      "sha": "11d5076b1bf4483b2ff6751a13e0736f5396b1e6",
+      "path": "pyproject.toml",
+      "line_start": 13,
+      "line_end": 22,
+      "url": "https://github.com/frappe/mcp/blob/11d5076b1bf4483b2ff6751a13e0736f5396b1e6/pyproject.toml#L13-L22",
+      "accessed_at": "2026-10-11T16:47:05.122Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "460fbcf98e96c6f82403fa033cfd5bf94a3baddd7eb4b76f076210bf00ceb67a",
+      "supports": "Companion pins Werkzeug 3.1.3 and pydantic~=2.11.7; incompatible with evaluated Framework dependencies",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "FM-REGISTER",
+      "candidate": "frappe_mcp",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/mcp",
+      "sha": "11d5076b1bf4483b2ff6751a13e0736f5396b1e6",
+      "path": "frappe_mcp/server/server.py",
+      "line_start": 64,
+      "line_end": 119,
+      "url": "https://github.com/frappe/mcp/blob/11d5076b1bf4483b2ff6751a13e0736f5396b1e6/frappe_mcp/server/server.py#L64-L119",
+      "accessed_at": "2026-10-11T16:47:05.122Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "7f85ad426b46c0d0f8a8e7d88fc3bc517037d5b117da869dcd2e8b454517c9ad",
+      "supports": "MCP endpoint defaults to authenticated Frappe whitelist; transport delegates to ordinary request pipeline",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "FM-CALL",
+      "candidate": "frappe_mcp",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/mcp",
+      "sha": "11d5076b1bf4483b2ff6751a13e0736f5396b1e6",
+      "path": "frappe_mcp/server/tools/handlers.py",
+      "line_start": 13,
+      "line_end": 49,
+      "url": "https://github.com/frappe/mcp/blob/11d5076b1bf4483b2ff6751a13e0736f5396b1e6/frappe_mcp/server/tools/handlers.py#L13-L49",
+      "accessed_at": "2026-10-11T16:47:05.122Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "a8e5bd67867f6788e356dabf38f960048afc1290012bbdeabe82b740f19745f5",
+      "supports": "Tool dispatch ultimately invokes registered function; semantic authorization must be implemented by that function",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "FM-LIST",
+      "candidate": "frappe_mcp",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/mcp",
+      "sha": "11d5076b1bf4483b2ff6751a13e0736f5396b1e6",
+      "path": "frappe_mcp/server/tools/handlers.py",
+      "line_start": 69,
+      "line_end": 104,
+      "url": "https://github.com/frappe/mcp/blob/11d5076b1bf4483b2ff6751a13e0736f5396b1e6/frappe_mcp/server/tools/handlers.py#L69-L104",
+      "accessed_at": "2026-10-11T16:47:05.122Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "a8e5bd67867f6788e356dabf38f960048afc1290012bbdeabe82b740f19745f5",
+      "supports": "Tool schemas are listed from tool registry, not generated automatically from DocType metadata",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "FM-ADD",
+      "candidate": "frappe_mcp",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "frappe/mcp",
+      "sha": "11d5076b1bf4483b2ff6751a13e0736f5396b1e6",
+      "path": "frappe_mcp/server/server.py",
+      "line_start": 205,
+      "line_end": 217,
+      "url": "https://github.com/frappe/mcp/blob/11d5076b1bf4483b2ff6751a13e0736f5396b1e6/frappe_mcp/server/server.py#L205-L217",
+      "accessed_at": "2026-10-11T16:47:05.123Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "7f85ad426b46c0d0f8a8e7d88fc3bc517037d5b117da869dcd2e8b454517c9ad",
+      "supports": "Explicit add_tool extension can support a future metadata bridge; not implemented here",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "FM-EXPERIMENTAL",
+      "candidate": "frappe_mcp",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "DOC_ONLY",
+      "repository": "frappe/mcp",
+      "sha": "11d5076b1bf4483b2ff6751a13e0736f5396b1e6",
+      "path": "README.md",
+      "line_start": 34,
+      "line_end": 37,
+      "url": "https://github.com/frappe/mcp/blob/11d5076b1bf4483b2ff6751a13e0736f5396b1e6/README.md#L34-L37",
+      "accessed_at": "2026-10-11T16:47:05.123Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "f7edb9f8792b88d1819a905a3807067d2d01b3a6cc04ca12eae8f7c9f96b45e9",
+      "supports": "Upstream explicitly labels companion highly experimental",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "O-LICENSE",
+      "candidate": "objectstack",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "objectstack-ai/objectstack",
+      "sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "path": "LICENSE",
+      "line_start": 1,
+      "line_end": 177,
+      "url": "https://github.com/objectstack-ai/objectstack/blob/4e4e881427a8b8b57696ad5bdb12792f2dac6556/LICENSE#L1-L177",
+      "accessed_at": "2026-10-11T16:47:05.123Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "3d1d5153fae0251cb050e7347f43077367156f820fd9d60184788afd6a91e642",
+      "supports": "Apache-2.0 framework license and redistribution/trademark conditions",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "O-EDITION",
+      "candidate": "objectstack",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "objectstack-ai/objectstack",
+      "sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "path": "LICENSING.md",
+      "line_start": 1,
+      "line_end": 19,
+      "url": "https://github.com/objectstack-ai/objectstack/blob/4e4e881427a8b8b57696ad5bdb12792f2dac6556/LICENSING.md#L1-L19",
+      "accessed_at": "2026-10-11T16:47:05.124Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "58151a46c463fe196e91a18290572683cb6bd9d1e3c2d4b794ef77ecaa2a169b",
+      "supports": "Production framework runtime is in open repository; commercial ObjectOS is separate",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "O-VERSION",
+      "candidate": "objectstack",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "objectstack-ai/objectstack",
+      "sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "path": "packages/spec/package.json",
+      "line_start": 1,
+      "line_end": 12,
+      "url": "https://github.com/objectstack-ai/objectstack/blob/4e4e881427a8b8b57696ad5bdb12792f2dac6556/packages/spec/package.json#L1-L12",
+      "accessed_at": "2026-10-11T16:47:05.124Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "a77f629703ce5e1abb9f473a900c27e306b56f8a656230b6f73d25e41b157772",
+      "supports": "Protocol package is 17.7.0 at the reviewed package-cohort tag SHA",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "O-META",
+      "candidate": "objectstack",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "objectstack-ai/objectstack",
+      "sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "path": "packages/metadata-protocol/src/protocol.ts",
+      "line_start": 20460,
+      "line_end": 20492,
+      "url": "https://github.com/objectstack-ai/objectstack/blob/4e4e881427a8b8b57696ad5bdb12792f2dac6556/packages/metadata-protocol/src/protocol.ts#L20460-L20492",
+      "accessed_at": "2026-10-11T16:47:05.129Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "3bf1f3bf264f0c6448fd1e482ad919b5284f988663663a7b5192cf304fb6781d",
+      "supports": "Metadata is persisted and registry mutated before physical schema sync",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "O-DDL-FAIL",
+      "candidate": "objectstack",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "objectstack-ai/objectstack",
+      "sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "path": "packages/metadata-protocol/src/protocol.ts",
+      "line_start": 18932,
+      "line_end": 18947,
+      "url": "https://github.com/objectstack-ai/objectstack/blob/4e4e881427a8b8b57696ad5bdb12792f2dac6556/packages/metadata-protocol/src/protocol.ts#L18932-L18947",
+      "accessed_at": "2026-10-11T16:47:05.138Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "3bf1f3bf264f0c6448fd1e482ad919b5284f988663663a7b5192cf304fb6781d",
+      "supports": "ensureObjectStorage catches table sync exception and only warns",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "O-SQL",
+      "candidate": "objectstack",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "objectstack-ai/objectstack",
+      "sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "path": "packages/drivers/driver-sql/src/sql-driver.ts",
+      "line_start": 11649,
+      "line_end": 11655,
+      "url": "https://github.com/objectstack-ai/objectstack/blob/4e4e881427a8b8b57696ad5bdb12792f2dac6556/packages/drivers/driver-sql/src/sql-driver.ts#L11649-L11655",
+      "accessed_at": "2026-10-11T16:47:05.146Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "ee189515b87301dd094437906a6f3d0b465ccf1ff396905e835c5fa116e039a0",
+      "supports": "SQL driver syncSchema dispatches to initObjects on resolved physical table",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "O-SECURITY",
+      "candidate": "objectstack",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "objectstack-ai/objectstack",
+      "sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "path": "packages/plugins/plugin-security/src/security-plugin.ts",
+      "line_start": 2281,
+      "line_end": 2329,
+      "url": "https://github.com/objectstack-ai/objectstack/blob/4e4e881427a8b8b57696ad5bdb12792f2dac6556/packages/plugins/plugin-security/src/security-plugin.ts#L2281-L2329",
+      "accessed_at": "2026-10-11T16:47:05.150Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "8456489fe679a946faa3dbc47349085c21206723076998de7d7b6ef50b17997d",
+      "supports": "ObjectQL middleware enforces normal operations but system contexts bypass",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "O-MCP-GATE",
+      "candidate": "objectstack",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "objectstack-ai/objectstack",
+      "sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "path": "packages/runtime/src/domains/mcp.ts",
+      "line_start": 62,
+      "line_end": 108,
+      "url": "https://github.com/objectstack-ai/objectstack/blob/4e4e881427a8b8b57696ad5bdb12792f2dac6556/packages/runtime/src/domains/mcp.ts#L62-L108",
+      "accessed_at": "2026-10-11T16:47:05.151Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "c29560ad60d156a046f19a5e57c60deffef7d6c88f0fcb90c9ad43f7344bc867",
+      "supports": "MCP HTTP entrance checks bound principal and OAuth tool-family scopes",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "O-MCP-BRIDGE",
+      "candidate": "objectstack",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "objectstack-ai/objectstack",
+      "sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "path": "packages/runtime/src/domains/mcp.ts",
+      "line_start": 491,
+      "line_end": 512,
+      "url": "https://github.com/objectstack-ai/objectstack/blob/4e4e881427a8b8b57696ad5bdb12792f2dac6556/packages/runtime/src/domains/mcp.ts#L491-L512",
+      "accessed_at": "2026-10-11T16:47:05.151Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "c29560ad60d156a046f19a5e57c60deffef7d6c88f0fcb90c9ad43f7344bc867",
+      "supports": "MCP bridge binds callData to request context and derives object summaries from metadata",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "O-MCP-WIRE",
+      "candidate": "objectstack",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "objectstack-ai/objectstack",
+      "sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "path": "packages/mcp/src/mcp-http-tools.ts",
+      "line_start": 489,
+      "line_end": 519,
+      "url": "https://github.com/objectstack-ai/objectstack/blob/4e4e881427a8b8b57696ad5bdb12792f2dac6556/packages/mcp/src/mcp-http-tools.ts#L489-L519",
+      "accessed_at": "2026-10-11T16:47:05.152Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "75710eeea57e28155f002418378243bf9ac4f9bacea30030148741abfed9aeff",
+      "supports": "Generic object/action tool families wired by bridge capability; distinct from one typed tool per object/action",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "O-ACTION",
+      "candidate": "objectstack",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "objectstack-ai/objectstack",
+      "sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "path": "packages/runtime/src/domains/actions.ts",
+      "line_start": 358,
+      "line_end": 395,
+      "url": "https://github.com/objectstack-ai/objectstack/blob/4e4e881427a8b8b57696ad5bdb12792f2dac6556/packages/runtime/src/domains/actions.ts#L358-L395",
+      "accessed_at": "2026-10-11T16:47:05.152Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "85ff22bb5878ccd5f597faf46033afb0f06d2bca903abdcfb8f5e496c351e469",
+      "supports": "Documented invocation boundary: trusted script/handler elevated; declarative update and user-flow use caller identity",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "O-STANDALONE",
+      "candidate": "objectstack",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "objectstack-ai/objectstack",
+      "sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "path": "packages/runtime/src/standalone-stack.ts",
+      "line_start": 1,
+      "line_end": 62,
+      "url": "https://github.com/objectstack-ai/objectstack/blob/4e4e881427a8b8b57696ad5bdb12792f2dac6556/packages/runtime/src/standalone-stack.ts#L1-L62",
+      "accessed_at": "2026-10-11T16:47:05.152Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "7f6c12c2c4b0094643f3ab882cb9f1dc56a1426f0f594a9311f12908e3ce4f6b",
+      "supports": "Standalone embedding factory intentionally omits authentication and Studio/control-plane services",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "O-AUTH-START",
+      "candidate": "objectstack",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "objectstack-ai/objectstack",
+      "sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "path": "packages/cli/src/commands/start.ts",
+      "line_start": 281,
+      "line_end": 292,
+      "url": "https://github.com/objectstack-ai/objectstack/blob/4e4e881427a8b8b57696ad5bdb12792f2dac6556/packages/cli/src/commands/start.ts#L281-L292",
+      "accessed_at": "2026-10-11T16:47:05.153Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "856d626828dd321d7716d4cbda1dfeb94210fc0bbd8d039c3fb1e2501b60a059",
+      "supports": "start source generates/persists auth secret; corrects stale same-version self-hosting prose about omission",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "O-EXT",
+      "candidate": "objectstack",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "objectstack-ai/objectstack",
+      "sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "path": "examples/app-todo/test/seed-check.ts",
+      "line_start": 12,
+      "line_end": 25,
+      "url": "https://github.com/objectstack-ai/objectstack/blob/4e4e881427a8b8b57696ad5bdb12792f2dac6556/examples/app-todo/test/seed-check.ts#L12-L25",
+      "accessed_at": "2026-10-11T16:47:05.153Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "d280416592e52f8fe20a9763ec0c27bcb21d5e40017b78a95cdb54e2aaec3725",
+      "supports": "Concrete kernel/use/ObjectQL/driver/AppPlugin assembly example; upstream example not run",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "O-MCP-TEST",
+      "candidate": "objectstack",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "EXISTING_TEST_FOUND",
+      "repository": "objectstack-ai/objectstack",
+      "sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "path": "packages/runtime/src/http-dispatcher.mcp-oauth.test.ts",
+      "line_start": 121,
+      "line_end": 178,
+      "url": "https://github.com/objectstack-ai/objectstack/blob/4e4e881427a8b8b57696ad5bdb12792f2dac6556/packages/runtime/src/http-dispatcher.mcp-oauth.test.ts#L121-L178",
+      "accessed_at": "2026-10-11T16:47:05.153Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "f2b701c296a39bfc04cf10cfc5526220ff9bf7d0182e4713e827c43e4759d208",
+      "supports": "OAuth/MCP entrance tests found; not run; not proof of full production principal propagation",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "S-LICENSE",
+      "candidate": "steedos",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "steedos/steedos-platform",
+      "sha": "82aae0733f2d4873eec08bce85b655cc5d3e4666",
+      "path": "LICENSE.txt",
+      "line_start": 1,
+      "line_end": 21,
+      "url": "https://github.com/steedos/steedos-platform/blob/82aae0733f2d4873eec08bce85b655cc5d3e4666/LICENSE.txt#L1-L21",
+      "accessed_at": "2026-10-11T16:47:05.154Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "ae59c7c9425a3bdcb79c643446dd7906c1f92bb1ec1ab63a5196ceb46378b345",
+      "supports": "2.7.32 modified Apache text has multi-tenant and logo/copyright conditions",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "S-CREATOR-LIC",
+      "candidate": "steedos",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "steedos/steedos-platform",
+      "sha": "82aae0733f2d4873eec08bce85b655cc5d3e4666",
+      "path": "creator/LICENSE.txt",
+      "line_start": 1,
+      "line_end": 204,
+      "url": "https://github.com/steedos/steedos-platform/blob/82aae0733f2d4873eec08bce85b655cc5d3e4666/creator/LICENSE.txt#L1-L204",
+      "accessed_at": "2026-10-11T16:47:05.154Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "8b56e8944fe6d4832b4c59155dd2a0470c9469e931a1e49e4eb4115e50ea733c",
+      "supports": "Creator subtree contains its own Apache text; module scope must be distinguished from the root supplementary license",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "S-OBJECTQL-MANIFEST",
+      "candidate": "steedos",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "steedos/steedos-platform",
+      "sha": "82aae0733f2d4873eec08bce85b655cc5d3e4666",
+      "path": "packages/objectql/package.json",
+      "line_start": 13,
+      "line_end": 18,
+      "url": "https://github.com/steedos/steedos-platform/blob/82aae0733f2d4873eec08bce85b655cc5d3e4666/packages/objectql/package.json#L13-L18",
+      "accessed_at": "2026-10-11T16:47:05.154Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "e4a15fc71b3486cae809c95dc484e741083f3d786ab2be0cda488a6ae7cd5f01",
+      "supports": "At the platform release SHA the ObjectQL manifest declares ISC and version 2.7.32-beta.7; manifest alone is not a complete license-scope ruling",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "S-SQL",
+      "candidate": "steedos",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "steedos/steedos-platform",
+      "sha": "82aae0733f2d4873eec08bce85b655cc5d3e4666",
+      "path": "packages/objectql/src/typeorm/driver.ts",
+      "line_start": 359,
+      "line_end": 377,
+      "url": "https://github.com/steedos/steedos-platform/blob/82aae0733f2d4873eec08bce85b655cc5d3e4666/packages/objectql/src/typeorm/driver.ts#L359-L377",
+      "accessed_at": "2026-10-11T16:47:05.155Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "4402300a1420f13954f2a80ac4cf93586a640c06f44b420a9aaefc27768ec76e",
+      "supports": "TypeORM SQL driver exists and synchronize is used: not an exclusively Mongo-only engine",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "S-COMPOSE",
+      "candidate": "steedos",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "steedos/steedos-platform",
+      "sha": "82aae0733f2d4873eec08bce85b655cc5d3e4666",
+      "path": "docker-compose.yml",
+      "line_start": 5,
+      "line_end": 43,
+      "url": "https://github.com/steedos/steedos-platform/blob/82aae0733f2d4873eec08bce85b655cc5d3e4666/docker-compose.yml#L5-L43",
+      "accessed_at": "2026-10-11T16:47:05.155Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "2a7c072b8c19581c6521472cb9f76294da8f97ebfe8f375dff962e647d0e863a",
+      "supports": "Published compose example uses a dev community image and MongoDB; not PostgreSQL runtime proof",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "S-REWRITE",
+      "candidate": "steedos",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "DOC_ONLY",
+      "repository": "steedos/steedos-platform",
+      "sha": "db942fdddbdb34644fb470f015bd0f351ec0ca92",
+      "path": "README.md",
+      "line_start": 39,
+      "line_end": 43,
+      "url": "https://github.com/steedos/steedos-platform/blob/db942fdddbdb34644fb470f015bd0f351ec0ca92/README.md#L39-L43",
+      "accessed_at": "2026-10-11T16:47:05.155Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "85ae047315856304ee0e23aee0a1b167dddc46a64381e98df40d9df8aafa35b7",
+      "supports": "Default 3.0 branch explicitly redirects future work to ObjectStack, separate from 2.x release",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "S-DEFAULT-LIC",
+      "candidate": "steedos",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "steedos/steedos-platform",
+      "sha": "db942fdddbdb34644fb470f015bd0f351ec0ca92",
+      "path": "LICENSE.txt",
+      "line_start": 1,
+      "line_end": 20,
+      "url": "https://github.com/steedos/steedos-platform/blob/db942fdddbdb34644fb470f015bd0f351ec0ca92/LICENSE.txt#L1-L20",
+      "accessed_at": "2026-10-11T16:47:05.155Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "c685f13bb6c29676960eed800eebbb57b56811cf18ebc734275fb3692e69b39e",
+      "supports": "Default 3.0 branch has AGPL text, different from reviewed v2.7.32 license",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "C-LICENSE",
+      "candidate": "corteza",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "cortezaproject/corteza",
+      "sha": "3835dfc4ac8bd89381753f09042ad147a4502576",
+      "path": "LICENSE",
+      "line_start": 1,
+      "line_end": 177,
+      "url": "https://github.com/cortezaproject/corteza/blob/3835dfc4ac8bd89381753f09042ad147a4502576/LICENSE#L1-L177",
+      "accessed_at": "2026-10-11T16:47:05.155Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "supports": "Apache-2.0 root; bundled vendor licenses remain separate",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "C-DAL",
+      "candidate": "corteza",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "cortezaproject/corteza",
+      "sha": "3835dfc4ac8bd89381753f09042ad147a4502576",
+      "path": "server/compose/service/module.go",
+      "line_start": 1464,
+      "line_end": 1495,
+      "url": "https://github.com/cortezaproject/corteza/blob/3835dfc4ac8bd89381753f09042ad147a4502576/server/compose/service/module.go#L1464-L1495",
+      "accessed_at": "2026-10-11T16:47:05.156Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "bb5b1a71ad7dab0f4276b954d0f4ce4aab0de87a0c0926be91cd7647cd2cdb32",
+      "supports": "Default field storage is JSON values; plain/alias codecs exist, so typed variant is not automatically impossible",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "A-LICENSE",
+      "candidate": "axelor",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "axelor/axelor-open-platform",
+      "sha": "705e2f301eddd1508db75a86c8921f02898df6a4",
+      "path": "LICENSE",
+      "line_start": 1,
+      "line_end": 669,
+      "url": "https://github.com/axelor/axelor-open-platform/blob/705e2f301eddd1508db75a86c8921f02898df6a4/LICENSE#L1-L669",
+      "accessed_at": "2026-10-11T16:47:05.156Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "3c218638d56db8939ad998823cc80221b35bbb7fab3e71711ef632dab7d134a7",
+      "supports": "AGPL-3.0 full text including modification/distribution/network-source conditions",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "A-JSON",
+      "candidate": "axelor",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "axelor/axelor-open-platform",
+      "sha": "705e2f301eddd1508db75a86c8921f02898df6a4",
+      "path": "axelor-core/src/main/resources/domains/MetaJson.xml",
+      "line_start": 98,
+      "line_end": 102,
+      "url": "https://github.com/axelor/axelor-open-platform/blob/705e2f301eddd1508db75a86c8921f02898df6a4/axelor-core/src/main/resources/domains/MetaJson.xml#L98-L102",
+      "accessed_at": "2026-10-11T16:47:05.156Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "de0db6bca6878e73a37234bec1118f97aa31b5a95bad8b52893fe5871f831f49",
+      "supports": "Runtime custom records use META_JSON_RECORD.attrs JSON, distinct from generated typed domain entities",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "A-FRONT",
+      "candidate": "axelor",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "axelor/axelor-open-platform",
+      "sha": "705e2f301eddd1508db75a86c8921f02898df6a4",
+      "path": "axelor-front/package.json",
+      "line_start": 47,
+      "line_end": 58,
+      "url": "https://github.com/axelor/axelor-open-platform/blob/705e2f301eddd1508db75a86c8921f02898df6a4/axelor-front/package.json#L47-L58",
+      "accessed_at": "2026-10-11T16:47:05.157Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "32702fc443c2d09b5aeb3c5178386b8424fa659100357a62264778843b7e5a7f",
+      "supports": "Axelor 8.2 reviewed frontend is React, correcting old Angular assumptions",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "J-LICENSE",
+      "candidate": "jmix",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "jmix-framework/jmix",
+      "sha": "258a2da9fea93dcc2d4d0a75cb4f9516805d3068",
+      "path": "LICENSE.txt",
+      "line_start": 1,
+      "line_end": 177,
+      "url": "https://github.com/jmix-framework/jmix/blob/258a2da9fea93dcc2d4d0a75cb4f9516805d3068/LICENSE.txt#L1-L177",
+      "accessed_at": "2026-10-11T16:47:05.157Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "supports": "Core Apache-2.0 text, not a license grant to premium modules",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "J-EAV",
+      "candidate": "jmix",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "jmix-framework/jmix",
+      "sha": "258a2da9fea93dcc2d4d0a75cb4f9516805d3068",
+      "path": "jmix-dynattr/dynattr/src/main/java/io/jmix/dynattr/model/CategoryAttributeValue.java",
+      "line_start": 43,
+      "line_end": 109,
+      "url": "https://github.com/jmix-framework/jmix/blob/258a2da9fea93dcc2d4d0a75cb4f9516805d3068/jmix-dynattr/dynattr/src/main/java/io/jmix/dynattr/model/CategoryAttributeValue.java#L43-L109",
+      "accessed_at": "2026-10-11T16:47:05.157Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "4bf37219e722cad42b84af7eb9e88972b22c59ad029771dc2cad7099a172c6b2",
+      "supports": "Dynamic Attributes values use shared typed columns in DYNAT_ATTR_VALUE (EAV)",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "P-LICENSE",
+      "candidate": "nop",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "entropy-cloud/nop-entropy",
+      "sha": "b06ee33095bb302e4305ea8c308703ef99528d2d",
+      "path": "LICENSE",
+      "line_start": 1,
+      "line_end": 177,
+      "url": "https://github.com/entropy-cloud/nop-entropy/blob/b06ee33095bb302e4305ea8c308703ef99528d2d/LICENSE#L1-L177",
+      "accessed_at": "2026-10-11T16:47:05.158Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "supports": "Root Apache text at selected SHA",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "P-README-LIC",
+      "candidate": "nop",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "entropy-cloud/nop-entropy",
+      "sha": "b06ee33095bb302e4305ea8c308703ef99528d2d",
+      "path": "README.md",
+      "line_start": 283,
+      "line_end": 301,
+      "url": "https://github.com/entropy-cloud/nop-entropy/blob/b06ee33095bb302e4305ea8c308703ef99528d2d/README.md#L283-L301",
+      "accessed_at": "2026-10-11T16:47:05.158Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "efeabfae22dbb12a1d0cd2d0847eab3984e5fed656ccf214ae05cf1ead83382c",
+      "supports": "Same-SHA README describes backend AGPL and vague SME exception; conflicts with root text and package metadata",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "P-POM-LIC",
+      "candidate": "nop",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "entropy-cloud/nop-entropy",
+      "sha": "b06ee33095bb302e4305ea8c308703ef99528d2d",
+      "path": "pom.xml",
+      "line_start": 14,
+      "line_end": 19,
+      "url": "https://github.com/entropy-cloud/nop-entropy/blob/b06ee33095bb302e4305ea8c308703ef99528d2d/pom.xml#L14-L19",
+      "accessed_at": "2026-10-11T16:47:05.158Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "af2b1844a07e48e405601813a8554e8002c234a90b8e827b88d390c5b1df5499",
+      "supports": "Maven parent declares Apache-2.0, reinforcing explicit license inconsistency in README",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "P-CORE-LIC",
+      "candidate": "nop",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "entropy-cloud/nop-entropy",
+      "sha": "b06ee33095bb302e4305ea8c308703ef99528d2d",
+      "path": "nop-kernel/nop-core/LICENSE",
+      "line_start": 1,
+      "line_end": 177,
+      "url": "https://github.com/entropy-cloud/nop-entropy/blob/b06ee33095bb302e4305ea8c308703ef99528d2d/nop-kernel/nop-core/LICENSE#L1-L177",
+      "accessed_at": "2026-10-11T16:47:05.159Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "supports": "Selected nop-core package has Apache text; whole backend rights still require scope clarification",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "P-NOTICE",
+      "candidate": "nop",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "entropy-cloud/nop-entropy",
+      "sha": "b06ee33095bb302e4305ea8c308703ef99528d2d",
+      "path": "NOTICE.md",
+      "line_start": 1,
+      "line_end": 8,
+      "url": "https://github.com/entropy-cloud/nop-entropy/blob/b06ee33095bb302e4305ea8c308703ef99528d2d/NOTICE.md#L1-L8",
+      "accessed_at": "2026-10-11T16:47:05.159Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "a0f262f33fa8a02818bcfd2039b984780bc99dd9fab2c5bf8b967968ed20e6a0",
+      "supports": "NOTICE records supersql-open-derived prompt templates",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "P-DYNAMIC",
+      "candidate": "nop",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "DOC_ONLY",
+      "repository": "entropy-cloud/nop-entropy",
+      "sha": "b06ee33095bb302e4305ea8c308703ef99528d2d",
+      "path": "docs/dev-guide/nocode/dynamic-orm.md",
+      "line_start": 1,
+      "line_end": 65,
+      "url": "https://github.com/entropy-cloud/nop-entropy/blob/b06ee33095bb302e4305ea8c308703ef99528d2d/docs/dev-guide/nocode/dynamic-orm.md#L1-L65",
+      "accessed_at": "2026-10-11T16:47:05.159Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "c4886aa0bda677495a3967c541280c337ce271146b6d26de64a8663cfbe5a7a4",
+      "supports": "Built-in nop-dyn defaults to shared entity/ext storage; not proof every general DynamicOrmEntity requires EAV",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "P-ORM",
+      "candidate": "nop",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "entropy-cloud/nop-entropy",
+      "sha": "b06ee33095bb302e4305ea8c308703ef99528d2d",
+      "path": "nop-persistence/nop-orm/src/main/java/io/nop/orm/support/DynamicOrmEntity.java",
+      "line_start": 36,
+      "line_end": 49,
+      "url": "https://github.com/entropy-cloud/nop-entropy/blob/b06ee33095bb302e4305ea8c308703ef99528d2d/nop-persistence/nop-orm/src/main/java/io/nop/orm/support/DynamicOrmEntity.java#L36-L49",
+      "accessed_at": "2026-10-11T16:47:05.159Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "4cc286507cc9bee670ec4e4dccbbb6a0244fe46c4169d29b7c07170112eb2b3a",
+      "supports": "General dynamic ORM accepts IEntityModel; full runtime table publication remains untraced",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "E-BACK-LIC",
+      "candidate": "jeecg",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "jeecgboot/JeecgBoot",
+      "sha": "e3b9dc0aefe1943d9772b026f64ed671a7c82802",
+      "path": "jeecg-boot/LICENSE",
+      "line_start": 203,
+      "line_end": 213,
+      "url": "https://github.com/jeecgboot/JeecgBoot/blob/e3b9dc0aefe1943d9772b026f64ed671a7c82802/jeecg-boot/LICENSE#L203-L213",
+      "accessed_at": "2026-10-11T16:47:05.160Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "232f84c4ddaec246a887132c85ce934f861cdcfbbbede1380746eb1c017c2b96",
+      "supports": "Backend subtree adds non-competition conditions beyond root Apache text",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "E-FRONT-LIC",
+      "candidate": "jeecg",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "jeecgboot/JeecgBoot",
+      "sha": "e3b9dc0aefe1943d9772b026f64ed671a7c82802",
+      "path": "jeecgboot-vue3/LICENSE",
+      "line_start": 1,
+      "line_end": 34,
+      "url": "https://github.com/jeecgboot/JeecgBoot/blob/e3b9dc0aefe1943d9772b026f64ed671a7c82802/jeecgboot-vue3/LICENSE#L1-L34",
+      "accessed_at": "2026-10-11T16:47:05.160Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "3f82018a1412cc12a6d06b64b648e284c8ef408db2ee590e4defb309e14bc87f",
+      "supports": "Frontend MIT text plus explicit non-competition restrictions",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "E-ONLINE",
+      "candidate": "jeecg",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "jeecgboot/JeecgBoot",
+      "sha": "e3b9dc0aefe1943d9772b026f64ed671a7c82802",
+      "path": "jeecg-boot/pom.xml",
+      "line_start": 299,
+      "line_end": 303,
+      "url": "https://github.com/jeecgboot/JeecgBoot/blob/e3b9dc0aefe1943d9772b026f64ed671a7c82802/jeecg-boot/pom.xml#L299-L303",
+      "accessed_at": "2026-10-11T16:47:05.160Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "55f97d7c4d228dd5e35007dd5b228bd266ac558d81022255102f6b5029e3557c",
+      "supports": "Platform 3.9.5 references independent jeecg-online 3.9.5-beta binary",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "D-LICENSE",
+      "candidate": "directus",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "directus/directus",
+      "sha": "4f77933bf9551cac6b289576078783e189b8f4e3",
+      "path": "license",
+      "line_start": 1,
+      "line_end": 118,
+      "url": "https://github.com/directus/directus/blob/4f77933bf9551cac6b289576078783e189b8f4e3/license#L1-L118",
+      "accessed_at": "2026-10-11T16:47:05.161Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "f209dfa60e56b29f6e8e5cefde91dec4ce86f12289209ede63520556385d555d",
+      "supports": "MSCL-1.0-GPL competing-use, license-key, redistribution and future GPL conditions; obsolete BSL not used",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "D-LICENSE-MGR",
+      "candidate": "directus",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "directus/directus",
+      "sha": "4f77933bf9551cac6b289576078783e189b8f4e3",
+      "path": "api/src/license/manager.ts",
+      "line_start": 174,
+      "line_end": 226,
+      "url": "https://github.com/directus/directus/blob/4f77933bf9551cac6b289576078783e189b8f4e3/api/src/license/manager.ts#L174-L226",
+      "accessed_at": "2026-10-11T16:47:05.161Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "386ebc07c82bb7aeec460bff977dac0e7c7b53cacb83df6ed90ca428b9156b81",
+      "supports": "License manager/core/offline handling exists; no proof all 12.x features run without commercial activation",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "T-LICENSE",
+      "candidate": "twenty",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "twentyhq/twenty",
+      "sha": "7e1431c84adbb264db98ab8b8d008a8401b6d4d6",
+      "path": "LICENSE",
+      "line_start": 1,
+      "line_end": 54,
+      "url": "https://github.com/twentyhq/twenty/blob/7e1431c84adbb264db98ab8b8d008a8401b6d4d6/LICENSE#L1-L54",
+      "accessed_at": "2026-10-11T16:47:05.161Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "e8c2240a022c9d44cad9e5113857fe1f6b0d3c997763e62e4cb743f3b2a2299d",
+      "supports": "AGPL Application Exception and MIT SDK distinctions: cannot dismiss extensibility because it is branded CRM",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "T-ENTERPRISE",
+      "candidate": "twenty",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "twentyhq/twenty",
+      "sha": "7e1431c84adbb264db98ab8b8d008a8401b6d4d6",
+      "path": "LICENSE",
+      "line_start": 727,
+      "line_end": 763,
+      "url": "https://github.com/twentyhq/twenty/blob/7e1431c84adbb264db98ab8b8d008a8401b6d4d6/LICENSE#L727-L763",
+      "accessed_at": "2026-10-11T16:47:05.162Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "e8c2240a022c9d44cad9e5113857fe1f6b0d3c997763e62e4cb743f3b2a2299d",
+      "supports": "Enterprise marked files require commercial subscription for production and have separate distribution terms",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "T-METADATA",
+      "candidate": "twenty",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "twentyhq/twenty",
+      "sha": "7e1431c84adbb264db98ab8b8d008a8401b6d4d6",
+      "path": "packages/twenty-server/src/engine/metadata-modules/object-metadata/object-metadata.service.ts",
+      "line_start": 122,
+      "line_end": 187,
+      "url": "https://github.com/twentyhq/twenty/blob/7e1431c84adbb264db98ab8b8d008a8401b6d4d6/packages/twenty-server/src/engine/metadata-modules/object-metadata/object-metadata.service.ts#L122-L187",
+      "accessed_at": "2026-10-11T16:47:05.162Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "4142769816e4587c7905973736f67423afd37ecb31ab3278d23d33294e951d95",
+      "supports": "Metadata changes routed to validate/build/run workspace migration service",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "T-DDL",
+      "candidate": "twenty",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "twentyhq/twenty",
+      "sha": "7e1431c84adbb264db98ab8b8d008a8401b6d4d6",
+      "path": "packages/twenty-server/src/engine/twenty-orm/workspace-schema-manager/services/workspace-schema-table-manager.service.ts",
+      "line_start": 7,
+      "line_end": 33,
+      "url": "https://github.com/twentyhq/twenty/blob/7e1431c84adbb264db98ab8b8d008a8401b6d4d6/packages/twenty-server/src/engine/twenty-orm/workspace-schema-manager/services/workspace-schema-table-manager.service.ts#L7-L33",
+      "accessed_at": "2026-10-11T16:47:05.162Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "d089efef4d095bf7ce4ffe4cdf9f679f06a87339c88922ca0d4770538e0dc526",
+      "supports": "Actual runtime physical-table SQL uses escaped schema/table identifiers",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "SC-LICENSE",
+      "candidate": "saltcorn",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "saltcorn/saltcorn",
+      "sha": "fb166dad6ae0f91f8b7125413e71881d1c2efc52",
+      "path": "LICENSE",
+      "line_start": 1,
+      "line_end": 21,
+      "url": "https://github.com/saltcorn/saltcorn/blob/fb166dad6ae0f91f8b7125413e71881d1c2efc52/LICENSE#L1-L21",
+      "accessed_at": "2026-10-11T16:47:05.163Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "5f515d5df542a22665127c304dfbc6f9c223a146e27eff946867075fcea48057",
+      "supports": "MIT license at reviewed beta snapshot",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "SC-BETA",
+      "candidate": "saltcorn",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "saltcorn/saltcorn",
+      "sha": "fb166dad6ae0f91f8b7125413e71881d1c2efc52",
+      "path": "packages/saltcorn-data/models/table.ts",
+      "line_start": 954,
+      "line_end": 985,
+      "url": "https://github.com/saltcorn/saltcorn/blob/fb166dad6ae0f91f8b7125413e71881d1c2efc52/packages/saltcorn-data/models/table.ts#L954-L985",
+      "accessed_at": "2026-10-11T16:47:05.163Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "2e3373c723820872be19cd341b7bceea640399b1063d7b28799beb7cd863ddae",
+      "supports": "Beta snapshot physical table creation and role/ownership metadata",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "SC-STABLE",
+      "candidate": "saltcorn",
+      "kind": "source",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "SOURCE_TRACED",
+      "repository": "saltcorn/saltcorn",
+      "sha": "596c3aed0662156af4d8c5e02d0fdfa4b874c52e",
+      "path": "packages/saltcorn-data/models/table.ts",
+      "line_start": 755,
+      "line_end": 778,
+      "url": "https://github.com/saltcorn/saltcorn/blob/596c3aed0662156af4d8c5e02d0fdfa4b874c52e/packages/saltcorn-data/models/table.ts#L755-L778",
+      "accessed_at": "2026-10-11T16:47:05.165Z",
+      "access_timezone": "Asia/Shanghai",
+      "file_sha256": "c381ce52cfdc3b99a444df26ccbbb690ef15719409d06600ee32ed8c70a163bd",
+      "supports": "Stable 1.6.2 table creation also has physical SQL; beta and stable source are kept separate",
+      "limitations": "Source observation is not a platform runtime acceptance result"
+    },
+    {
+      "id": "DOC-N-MIGRATION",
+      "candidate": "nocobase",
+      "kind": "official_document",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "DOC_ONLY",
+      "url": "https://docs.nocobase.com/plugins/@nocobase/plugin-migration-manager",
+      "access_dates": [
+        "2026-10-11",
+        "2026-10-12"
+      ],
+      "access_timezone": "Asia/Shanghai",
+      "applicable_version": "1.x/2.x",
+      "rolling": true,
+      "supports": "Migration manager supports 1.x/2.x and is Professional Edition+",
+      "limitations": "Rolling official page; not a fixed-version binary/source or runtime proof"
+    },
+    {
+      "id": "DOC-N-APPROVAL",
+      "candidate": "nocobase",
+      "kind": "official_document",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "DOC_ONLY",
+      "url": "https://docs.nocobase.com/plugins/@nocobase/plugin-workflow-approval",
+      "access_dates": [
+        "2026-10-11",
+        "2026-10-12"
+      ],
+      "access_timezone": "Asia/Shanghai",
+      "applicable_version": "1.x/2.x",
+      "rolling": true,
+      "supports": "Dedicated approval is Professional Edition+",
+      "limitations": "Rolling official page; not a fixed-version binary/source or runtime proof"
+    },
+    {
+      "id": "DOC-N-AGREEMENT",
+      "candidate": "nocobase",
+      "kind": "official_document",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "DOC_ONLY",
+      "url": "https://www.nocobase.com/en/agreement",
+      "access_dates": [
+        "2026-10-11",
+        "2026-10-12"
+      ],
+      "access_timezone": "Asia/Shanghai",
+      "applicable_version": "updated 2026-02-24",
+      "rolling": true,
+      "supports": "February 24 2026 agreement contains supplementary licensing and platform/OEM boundaries",
+      "limitations": "Rolling official page; not a fixed-version binary/source or runtime proof"
+    },
+    {
+      "id": "DOC-J-DYNAMIC",
+      "candidate": "jmix",
+      "kind": "official_document",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "DOC_ONLY",
+      "url": "https://docs.jmix.io/jmix/dyn-model/index.html",
+      "access_dates": [
+        "2026-10-11",
+        "2026-10-12"
+      ],
+      "access_timezone": "Asia/Shanghai",
+      "applicable_version": "docs v3; premium artifact not obtained",
+      "rolling": true,
+      "supports": "Dynamic Model has dedicated dynamic tables, is experimental and requires Enterprise subscription",
+      "limitations": "Rolling official page; not a fixed-version binary/source or runtime proof"
+    },
+    {
+      "id": "DOC-A-MODEL",
+      "candidate": "axelor",
+      "kind": "official_document",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "DOC_ONLY",
+      "url": "https://docs.axelor.com/adk/8.2/dev-guide/models/models.html",
+      "access_dates": [
+        "2026-10-11",
+        "2026-10-12"
+      ],
+      "access_timezone": "Asia/Shanghai",
+      "applicable_version": "8.2",
+      "rolling": true,
+      "supports": "Typed domain XML generates Java models/repositories",
+      "limitations": "Rolling official page; not a fixed-version binary/source or runtime proof"
+    },
+    {
+      "id": "DOC-A-CUSTOM",
+      "candidate": "axelor",
+      "kind": "official_document",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "DOC_ONLY",
+      "url": "https://docs.axelor.com/adk/8.2/dev-guide/models/custom-models.html",
+      "access_dates": [
+        "2026-10-11",
+        "2026-10-12"
+      ],
+      "access_timezone": "Asia/Shanghai",
+      "applicable_version": "8.2",
+      "rolling": true,
+      "supports": "Runtime custom model mechanism must be distinguished from typed domain code generation",
+      "limitations": "Rolling official page; not a fixed-version binary/source or runtime proof"
+    },
+    {
+      "id": "DOC-JE-UPSTREAM",
+      "candidate": "jeecg",
+      "kind": "official_document",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "DOC_ONLY",
+      "url": "https://www.jeecg.com/download",
+      "access_dates": [
+        "2026-10-11",
+        "2026-10-12"
+      ],
+      "access_timezone": "Asia/Shanghai",
+      "applicable_version": "rolling",
+      "rolling": true,
+      "supports": "Official source-download page identifies JeecgBoot ecosystem; GitHub canonical repo was cross-checked",
+      "limitations": "Rolling official page; not a fixed-version binary/source or runtime proof"
+    },
+    {
+      "id": "DOC-GNU",
+      "candidate": "axelor",
+      "kind": "official_document",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "DOC_ONLY",
+      "url": "https://www.gnu.org/licenses/gpl-faq.en.html#AGPLv3ServerAsUser",
+      "access_dates": [
+        "2026-10-11",
+        "2026-10-12"
+      ],
+      "access_timezone": "Asia/Shanghai",
+      "applicable_version": "AGPLv3 FAQ",
+      "rolling": true,
+      "supports": "AGPL network-source conditions are not equivalent to a ban on commercial use or automatic exemption for internal networks",
+      "limitations": "Rolling official page; not a fixed-version binary/source or runtime proof"
+    },
+    {
+      "id": "DOC-F-ENV",
+      "candidate": "frappe",
+      "kind": "official_document",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "DOC_ONLY",
+      "url": "https://docs.frappe.io/framework/user/en/installation",
+      "access_dates": [
+        "2026-10-11",
+        "2026-10-12"
+      ],
+      "access_timezone": "Asia/Shanghai",
+      "applicable_version": "rolling; source requirements separately pinned",
+      "rolling": true,
+      "supports": "Official installation environment must be used for next proof; native Windows is not the evaluated deployment path",
+      "limitations": "Rolling official page; not a fixed-version binary/source or runtime proof"
+    },
+    {
+      "id": "DOC-O-UPSTREAM",
+      "candidate": "objectstack",
+      "kind": "official_document",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "DOC_ONLY",
+      "url": "https://objectstack.ai/",
+      "access_dates": [
+        "2026-10-11",
+        "2026-10-12"
+      ],
+      "access_timezone": "Asia/Shanghai",
+      "applicable_version": "rolling website; source separately pinned",
+      "rolling": true,
+      "supports": "Steedos official link leads to ObjectStack website whose GitHub link resolves to objectstack-ai/objectstack",
+      "limitations": "Rolling official page; not a fixed-version binary/source or runtime proof"
+    },
+    {
+      "id": "DOC-D-LICENSE",
+      "candidate": "directus",
+      "kind": "official_document",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "DOC_ONLY",
+      "url": "https://directus.com/license",
+      "access_dates": [
+        "2026-10-11",
+        "2026-10-12"
+      ],
+      "access_timezone": "Asia/Shanghai",
+      "applicable_version": "MSCL 1.0",
+      "rolling": true,
+      "supports": "Current license page describes MSCL; old BSL thresholds cannot be carried into 12.5.0",
+      "limitations": "Rolling official page; not a fixed-version binary/source or runtime proof"
+    },
+    {
+      "id": "FM-PYPI",
+      "candidate": "frappe_mcp",
+      "kind": "official_package_registry",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "DOC_ONLY",
+      "url": "https://pypi.org/pypi/frappe-mcp/json",
+      "accessed_at": "2026-10-11T16:47:05.166Z",
+      "version": "0.1.0",
+      "supports": "Latest PyPI package is 0.1.0 with Werkzeug==3.1.3 and pydantic~=2.11.7; distinct from 0.1.1 source snapshot",
+      "limitations": "Not installed or run; source-to-distribution mapping not verified"
+    },
+    {
+      "id": "RT-O-DYNAMIC",
+      "candidate": "objectstack",
+      "kind": "local_runtime",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "RUNTIME_VERIFIED",
+      "source_sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "published_package_version": "17.7.0",
+      "package_source_equivalence": "UNVERIFIED: npm has no gitHead; behavior is also traced independently in the fixed source",
+      "started_at": "2026-10-11T15:50:05.798Z",
+      "finished_at": "2026-10-11T15:50:09.116Z",
+      "access_timezone": "Asia/Shanghai",
+      "environment": "Windows; Node 24.13.0; dedicated PostgreSQL 18.1 at 127.0.0.1:55432; no Docker",
+      "supports": "Real PostgreSQL 18.1: runtime object/typed table/programmatic CRUD/add-field; privileged standalone kernel only",
+      "local_evidence_path": "artifacts/oss-assessment/objectstack-probe-result-attempt3.json",
+      "evidence_file_sha256": "63ff809e4bda532ba3b585496992030428e247436b551ad97295c88443ce773b",
+      "reproduction": "docs/research/PLAT-000-PRE/RUNTIME_CHECKS.md",
+      "limitations": "No REST/MCP/UI/two authenticated users/configuration migration test; not platform acceptance"
+    },
+    {
+      "id": "RT-O-DDL",
+      "candidate": "objectstack",
+      "kind": "local_runtime",
+      "fact_type": "VERIFIED_FACT",
+      "evidence_level": "RUNTIME_VERIFIED",
+      "source_sha": "4e4e881427a8b8b57696ad5bdb12792f2dac6556",
+      "published_package_version": "17.7.0",
+      "package_source_equivalence": "UNVERIFIED: npm has no gitHead; behavior is also traced independently in the fixed source",
+      "started_at": "2026-10-11T15:52:12.386Z",
+      "finished_at": "2026-10-11T15:52:15.776Z",
+      "access_timezone": "Asia/Shanghai",
+      "environment": "Windows; Node 24.13.0; dedicated PostgreSQL 18.1 at 127.0.0.1:55432; no Docker",
+      "supports": "Real restricted PostgreSQL role: metadata publish returns success/active while physical table is absent",
+      "local_evidence_path": "artifacts/oss-assessment/objectstack-ddl-failure-result.json",
+      "evidence_file_sha256": "aedce6f8eac80655395b1b9a65f3b1373fbd2fd77d8546ca11130b413b9d016a",
+      "reproduction": "docs/research/PLAT-000-PRE/RUNTIME_CHECKS.md",
+      "limitations": "No REST/MCP/UI/two authenticated users/configuration migration test; not platform acceptance"
+    }
+  ],
+  "global_limitations": [
+    "No complete license/dependency SBOM audit",
+    "No commercial module source obtained",
+    "Advisories are bounded first-page samples, not an exhaustive security audit",
+    "Runtime package version is fixed but source-to-binary equivalence is not established",
+    "No paid model API or real business data used"
+  ]
+}

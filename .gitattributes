@@ -1,0 +1,3 @@
+# Preserve the user's approved instruction and its archive byte for byte.
+/LCP_PLAT-000-PRE_Open_Source_Assessment_Prompt.md -text
+/docs/research/PLAT-000-PRE/EXECUTION_PROMPT.md -text
