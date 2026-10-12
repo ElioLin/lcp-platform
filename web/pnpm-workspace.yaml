@@ -1,0 +1,2 @@
+# Match the CI release-age gate without package-specific exclusions.
+minimumReleaseAge: 1440
