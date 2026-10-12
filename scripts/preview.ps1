@@ -33,7 +33,7 @@ if (-not $frontendProcessId) {
     $frontend=Start-Process -FilePath (Get-Command node.exe).Source -ArgumentList @("`"$pnpmEntry`"",'--dir',"`"$webDirectory`"",'run','preview') -WorkingDirectory $workspaceRoot -WindowStyle Hidden -PassThru -RedirectStandardOutput (Join-Path $logDirectory 'web.log') -RedirectStandardError (Join-Path $logDirectory 'web-error.log')
     $frontendLauncherId=$frontend.Id
 }
-$deadline=[DateTime]::UtcNow.AddSeconds(60)
+$deadline=[DateTime]::UtcNow.AddSeconds(120)
 while ([DateTime]::UtcNow -lt $deadline) {
     try {
         $health=Invoke-RestMethod -Uri 'http://127.0.0.1:8085/api/health' -TimeoutSec 2

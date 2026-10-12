@@ -19,7 +19,7 @@ S1 采用 BUILD_CORE：自行实现业务对象目录、发布和统一数据入
 | 迁移 / 会话 / JSON | Flyway 12.4.0、Spring Session JDBC 4.1.1、Jackson 3 |
 | 前端 | React 19.3.0、TypeScript 6.0.3、Vite 8.3.4 |
 | 界面 | Ant Design 6.6.5、icons 6.3.4；中文、系统字体、蓝色/深色导航 |
-| 请求 / 路由 | Fetch、TanStack Query 5.104.2、React Router 7.18.4 |
+| 请求 / 路由 | Fetch、TanStack Query 5.104.1、React Router 7.18.4 |
 | 金额 | 后端 BigDecimal/NUMERIC、JSON 字符串、前端 decimal.js 10.6.0 |
 | 工具 | 本机 Node 24.13.0、pnpm 12.11.2、ESLint 10.12.0、typescript-eslint 8.71.1 |
 | 验证 | JUnit 6 的真实 HTTP/PG 测试、Playwright 1.64.0 的真实浏览器验收 |
@@ -87,6 +87,9 @@ pwsh -File ./scripts/test-backend.ps1
 pwsh -File ./scripts/pnpm.ps1 --dir web run build
 pwsh -File ./scripts/pnpm.ps1 --dir web run lint
 # 先启动真实API和前端，再运行浏览器验收
+# 首次下载配套浏览器到项目目录，不使用/更改系统Chrome配置
+$env:PLAYWRIGHT_BROWSERS_PATH=Join-Path (Get-Location).Path '.local/browsers'
+pwsh -File ./scripts/pnpm.ps1 --dir web exec playwright install --only-shell chromium
 pwsh -File ./scripts/test-web.ps1
 ```
 

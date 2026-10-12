@@ -12,11 +12,11 @@ Windows x64、Temurin25.0.4.1、Maven3.9.16、Node24.13.0、pnpm12.11.2、Postgr
 | HTTP/PG集成 | `scripts/test-backend.ps1` | PASS：7项，0失败/错误/跳过；真实随机端口Spring服务器、HTTP cookie会话、PG18.1，无Mock/H2 |
 | 前端类型与生产构建 | `scripts/pnpm.ps1 --dir web run build` | PASS；TypeScript6.0.3、Vite8.3.4 |
 | 前端静态检查 | `scripts/pnpm.ps1 --dir web run lint` | PASS，0错误/警告 |
-| 浏览器验收 | `scripts/test-web.ps1` | 最初系统Chrome有4项PASS；交付前重跑出现未完成请求，正在以配套Chromium复核。真实127.0.0.1 API和PG，不使用请求Mock |
+| 浏览器验收 | `scripts/test-web.ps1` | PASS：配套Chromium Headless Shell156.0.8078.4 / revision1248，Query5.104.1，4项，约1.1分钟，退出0。真实127.0.0.1 API和PG，不使用请求Mock |
 | 页面视觉检查 | screenshots目录中的真实桌面/375px截图 | 已实际查看登录、列表、对象配置、详情；对日期输出与标签绑定进行了修正 |
 | 项目内工具入口 | `scripts/setup-tools.ps1` | 已实际运行现有工具路径；首次下载采用固定来源/校验，首次下载所有分支未在一个全空目录完整重演 |
 
-日志位于忽略的 `artifacts/platform-skeleton/`，包括 backend-tests-final.log、web-build-final.log、web-lint-final.log、web-e2e-delivery.log 与 screenshots/*.png。浏览器工具会重新生成自身report/test-results；不声称所有尝试的trace永远保留。原始研究缓存与PRE报告保持不变。
+日志位于忽略的 `artifacts/platform-skeleton/`，包括 backend-tests-final.log、web-build-final.log、web-lint-final.log、web-e2e-chromium-final.log 与 screenshots/*.png。浏览器工具会重新生成自身report/test-results；不声称所有尝试的trace永远保留。原始研究缓存与PRE报告保持不变。
 
 ## 后端七项的实际断言
 
@@ -45,6 +45,8 @@ Windows x64、Temurin25.0.4.1、Maven3.9.16、Node24.13.0、pnpm12.11.2、Postgr
 - JDBC DATE曾被JSON输出为时间戳，已转成LocalDate字符串，并新增日期回归断言。
 - 首次建库时session cleanup可能早于Flyway，session customizer显式依赖数据库初始化；后续启动/测试均无缺表错误。
 - 项目工具启动与Windows原生子进程管道问题已用隐藏后台启动、日志重定向与所属目录PID校验处理；独立PG数据未删除。
+- 系统Chrome最初通过四项，后续出现未完成请求；当时API探测正常、PG连接及Tomcat线程空闲，未证实业务处理阻塞。最终改为Playwright配套Chromium及构建产物预览，四项通过；不据此宣称已定位系统Chrome的所有问题或完成全浏览器兼容。
+- 首轮CI的Linux/真实PG后端7项通过；web安装因Query5.104.2发布不足24小时被pnpm等待策略拒绝。本地安装器曾生成只允许这两个版本的例外配置，未提交进首份实现；随后移除例外，显式设置1440分钟等待，改为2026-10-02发布的Query/core5.104.1并重新生成lock。本机与CI保留同一等待策略，不把此安装拒绝写成业务功能失败。
 
 ## 限制
 
